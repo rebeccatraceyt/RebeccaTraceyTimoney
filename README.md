@@ -1,108 +1,308 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<div align="center">
+<p>
+<img src="markdown-files/logo.gif" alt="Hey there! I'm Rebecca">
+</p>
 
-Welcome USER_NAME,
+<h3>
+<strong>Welcome to my <a href="">Portfolio</a>!</strong> <br />
+Hi, I'm Rebeca, a Junior Web Developer based in Dublin, Ireland. <br>
+</h3>
+<p>This fully responsive website was designed by, and for, me. The focus of the site is to create an online presence as a developer, allowing others to find out more about me, including previous projects, and how to get in contact for future ones. 
+</p>
+</div>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of contents
+1. [UX](#UX)
+2. [Features](#Features)
+3. [Known Issues and Bugs](#Known-Issues-and-Bugs)
+4. [Technologies Used](#Technologies-Used)
+5. [Testing](#Testing)
+6. [Deployment](#Deployment)
+7. [Credits](#Credits)
+8. [Acknowledgements](#Acknowledgements)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+***
 
-## Gitpod Reminders
+## UX 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### User Stories
+#### As a visitor, I want to:
+1. Easily navigate through the website to find the relevant content, effortlessly.
+2. Learn about the developer's background in order to find out more about them.
+3. Easily navigate to previous projects of the developer, to learn about their style of work.
+4. Easily find a point of contact in order to get in touch with the developer.
 
-`python3 -m http.server`
+### Development Planes
 
-A blue button should appear to click: _Make Public_,
+The developer distinguished the required functionality of the site and how it would answer the user stories, as described above, using the Five Development Planes:
 
-Another blue button should appear to click: _Open Browser_.
+#### Strategy
+Broken into three categories, the website will focus on the following target audiences:
+- **Roles:**
+     - New/Potential Clients
+     - Current/Return Clients
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Demographic:**
+     - Potential Employers
+     - Interest in collaborating with the developer
 
-A blue button should appear to click: _Make Public_,
+- **Psychographics:**
+     - Personality & Attitudes:
+          - Friendly
+          - Outgoing
+     - Values:
+          - More modern lifestyle
+          - Importance of online presence
+     - Lifestyles:
+          - Business-oriented
+          - Client-focused
 
-Another blue button should appear to click: _Open Browser_.
+The website needs to enable the **user** to:
+- Retrieve desired information:
+     - Biographical information
+     - Previous projects
+     - Contact information
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The website needs to enable the **developer** to:
+- Develop an online presence 
+- Provide an easily navigable website for users to find relevant information:
+     - Projects
+     - Biographical information
+- Provide a channel of communication for enquires
 
-To log into the Heroku toolbelt CLI:
+With these goals in mind, a strategy table was created to determine the trade-off between importance and viability with the following results:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<p align="center">
+<img src="markdown-files/strategy-table.png" alt="Strategy Table for RebeccaTraceyTimoney">
+</p>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Scope
+A scope was defined in order to clearly identify what needed to be done in order to align features with the strategy previously defined. This was broken into two categories:
+- **Content Requirements**
+     - The user will be looking for:
+          - Biographic information
+          - Projects
+          - Contact details
+- **Functionality Requirements**
+     - The user will be able to:
+          - Easily navigate through the site in order to find the information they want
+          - Contact the developer directly through their chosen channel of communication
 
-------
+#### Structure
+The information architecture was organized in a **hierarchial tree structure** in order to ensure that users could navigate through the site with ease and efficiency, with the following results: 
 
-## Release History
+<p align="center">
+<img src="markdown-files/sitemap.png" alt="Sitemap for RebeccaTraceyTimoney">
+</p>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Skeleton 
+High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=0%3A1 "Link to Portfolio Workspace") with providing a positive user experience in mind:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<div align="center">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<p><strong>Homepage</strong></p>
+<img src="markdown-files/home.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
+<p><strong>Profile Page</strong></p>
+<img src="markdown-files/works.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
+<p><strong>Project Works Page</strong></p>
+<img src="markdown-files/works.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
+<p><strong>Skills Page</strong></p>
+<img src="markdown-files/works.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
+<p><strong>Contact Page</strong></p>
+<img src="markdown-files/contact.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+</div>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### Surface
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Colour Scheme**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+The chosen colour scheme is reflective of the developers style of creativity. The colours are from the developer's colour favourites, and were selected on their aesthetic appeal. The following colours were selected:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![#438796](https://via.placeholder.com/15/438796/000000?text=+) `#438796` <br>
+![#629CA7](https://via.placeholder.com/15/629CA7/000000?text=+) `#629CA7` <br>
+![#5A6080](https://via.placeholder.com/15/5A6080/000000?text=+) `#5A6080` <br>
+![#716387](https://via.placeholder.com/15/716387/000000?text=+) `#716387` <br>
+![#746E90](https://via.placeholder.com/15/746E90/000000?text=+) `#746E90` <br>
+![#061225](https://via.placeholder.com/15/061225/000000?text=+) `#061225`
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+**Typography**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- The primary font chosen is [Open Sans](https://fonts.google.com/specimen/Open+Sans "Link to Open Sans Google Fonts page"). A humanist sans-serif typeface, Open Sans is optimised for legibility providing a neutral, yet friendly appearance.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+     ![Open Sans Typography Example](markdown-files/opensans.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- The Secondary font (accent font) chosen is [Poppins](https://fonts.google.com/specimen/Poppins "Link to Poppins Google Fonts page"). A subtly rounder typeface, adding impact to the page.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+     ![Poppins Typography Example](markdown-files/poppins.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+**Imagery**
+- The imagery used was created by the developer using the application [Procreate](https://procreate.art/ "Link to Procreate") in order to create a consistency of the elements while maintaining the look and feel of the application.
 
-## FAQ about the uptime script
+[Back to top ⇧](#table-of-contents)
 
-**Why have you added this script?**
+## Features
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Design Features
 
-**How will this affect me?**
+<dl>
+  <dt></dt>
+  <dd>
+     <ul>
+          <li><strong></strong> - </li>
+          <li><strong></strong> - </li>
+     </ul>
+  </dd>
+ 
+### Existing Features
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Features to Implement in the future
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+[Back to top ⇧](#table-of-contents)
 
-**So….?**
+## Known Issues and Bugs 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+[Back to top ⇧](#table-of-contents)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Technologies Used
+### Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wiki")
+- [Python](https://www.python.org/ "Link to Python Homepage")
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Tools Used
+- [Git](https://git-scm.com/ "Link to Git homepage")
+     - Git was used for version control to commit to Git and push to Heroku.
+- [GitHub](https://github.com/ "Link to GitHub")
+     - GitHub was used to store the project repository, after pushing.
+- [Heroku](https://id.heroku.com/login "Link to Heroku login page")
+     -  Heroku was used in order to deploy the website.
+- [Django](https://www.djangoproject.com/ "Link to Django Homepage")
+     - Django was used as the web framework for the application.
+- [AWS](https://aws.amazon.com/ "Link to AWS Homepage")
+     - The Amazon Web Service **s3 Bucket** was used to store static and media files in the production database.
 
-**Anything more?**
+- [Figma](https://www.figma.com/ "Link to Figma homepage")
+     - Figma was used to create the wireframes during the design phase of the project.
+- [Mockup Generator](https://techsini.com/multi-mockup/index.php "Link Mockup Geneerator Homepage")
+     - Am I Responsive was used in order to validate the responsiveness of the design throughout the process, and to generate mockup imagery to be used.
+- [Procreate](https://procreate.art/ "Link to ProCreate homepage")
+     - Procreate was used to create and edit images as well as using the colour picker tool to ensure consistency throughout.
+- [Font Awesome](https://fontawesome.com/ "Link to Font Awesome site")
+     - Font Awesome was used in conjunction with Iconify for icons used throughout the website.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Libraries
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/ "Link to Bootstrap page")
+     - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
+- [jQuery](https://jquery.com/ "Link to jQuery page")
+     - jQuery was used to simplify the JavaScript code used.
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+    - Google fonts was used to import the fonts **"Indie Flower"** and **"Work Sans"** into the style.css file. These fonts were used throughout the project.
+- [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page")
+     - jQuery Validation was used to simplify form validation for the **Contact Form**.
+- [SweetAlert2](https://sweetalert2.github.io/ "Link to Sweet Alert 2 page")
+     - SweetAlert2 was used to customise the **Contact Form** success message for UX 
+- [Jinja](http://jinja.pocoo.org/docs/2.10/ "Link to Jinja information")
+     - Jinja templating language was used to simplify and display backend data in html.
+### Database Management
+- [SQLite](https://www.sqlite.org/index.html "Link to SQLite site")
+     - SQLite was used as a single-file database during development.
+- [Heroku Postgres](https://www.heroku.com/postgres "Link to Heroku Postgres site")
+     - Heroku Postgres was used for production database, provided by Heroku.
 
----
 
-Happy coding!
+
+[Back to top ⇧](#table-of-contents)
+
+## Testing
+
+Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
+
+## Deployment
+
+To further develop this project, or adapt it for your own portfolio, a clone can be made using the following steps:
+
+*Deployment Instructions assume you are working on a MacOS and may differ on other operating systems. Please check documentation specific for your operating system*
+
+### Prerequisites
+To run the project on your own IDE, ensure you have the following:
+
+- An IDE (such as [Visual Studio Code](https://code.visualstudio.com/) or [GitPod](https://www.gitpod.io/))
+- [Git](https://git-scm.com/downloads) for project version control
+### Local Copy Creation
+A Local Clone of the repository can be made in two ways:
+
+#### 1. Forking the Repository:
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/RebeccaTraceyTimoney "Link to GitHub Repo").
+3. At the top of the repository, on the right side of the page, select "Fork".
+4. You should now have a copy of the original repository in your GitHub account.
+
+#### 2. Creating a Clone:
+**To run this project locally:**
+1. Install the [GitPod Browser](https://www.gitpod.io/docs/browser-extension/ "Link to Gitpod Browser extension download") Extension for Chrome.
+2. After installation, restart the browser.
+3. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/RebeccaTraceyTimoney "Link to GitHub Repo").
+5. Click the green "GitPod" button in the top right corner of the repository.
+This will trigger a new gitPod workspace to be created from the code in github where you can work locally.
+
+**To run this project within a local IDE (such as VSCode):**
+1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/RebeccaTraceyTimoney "Link to GitHub Repo").
+3. Under the repository name, click "Clone or download".
+4. In the Clone with HTTPs section, copy the clone URL for the repository.
+5. In your local IDE open the terminal.
+6. Change the current working directory to the location where you want the cloned directory to be made.
+7. Type 'git clone', and then paste the URL you copied in Step 3.
+     ```
+     git clone https://github.com/USERNAME/REPOSITORY
+     ```
+8. Press Enter. Your local clone will be created.
+
+     *(Further reading and troubleshooting on cloning a repository from GitHub [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Link to GitHub troubleshooting"))*
+
+
+### GitHub Pages Deployment
+
+Once a local clone is created, follow the below steps to deploy locally:
+1. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/RebeccaTraceyTimoney "Link to GitHub Repo").
+2. At the top of the repository, select Settings from the menu items.
+3. Scroll down the Settings page to the "GitHub Pages" section.
+4. Under "Source" click the drop-down menu labelled "None" and select "Master Branch".
+5. Upon selection, the page will automatically refresh meaning that the website is now deployed.
+6. Scroll back down to the "GitHub Pages" section to retrieve the deployed link.
+
+<div align='center'>
+<h2><span style='font-size:20px;'>&#127882;</span> Congratulations! <span style='font-size:20px;'>&#127882;</span> </h2>
+<h4>Your project is ready to use. Have fun!</h4>
+</div>
+
+
+[Back to top ⇧](#table-of-contents)
+
+## Credits 
+
+### Content
+
+### Media
+
+### Code 
+The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
+- [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
+- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
+- [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
+- [JSfiddle](https://jsfiddle.net/ "Link to JSfiddle page")
+
+[Back to top ⇧](#table-of-contents)
+
+***
+
