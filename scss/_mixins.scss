@@ -1,0 +1,29 @@
+@mixin btnStyle {
+    border-radius: 2px;
+    border: 2px solid $body;
+
+    font-size: 1.2rem;
+    font-family: $title-font;
+    color: $body;
+    font-weight: 700;
+    
+    box-shadow: $body 0 0 5px;
+}
+
+@mixin tablet {
+    @media (min-width: 700px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin largeTablet {
+    @media (min-width: 992px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}

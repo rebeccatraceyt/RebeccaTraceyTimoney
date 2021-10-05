@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    -webkit-transition-delay: 0ms !important;
+            transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  background-color: #061225;
+}
+
+section {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #061225;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.iconify {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+/* ----------------------- *\ 
+           Navbar
+\* ----------------------- */
+#nav-sec {
+  float: right;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+#nav-sec #nav-btn {
+  background: transparent;
+  border: none;
+  height: 30px;
+  width: 30px;
+  top: 35px;
+  right: 43px;
+  position: fixed;
+  z-index: 102;
+  cursor: pointer;
+}
+
+#nav-sec #nav-btn:focus {
+  outline: none;
+}
+
+#nav-sec #nav-btn span {
+  background-color: #fafafa;
+  border-radius: 2px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: height 100ms;
+  transition: height 100ms;
+}
+
+#nav-sec #nav-btn span::after, #nav-sec #nav-btn span::before {
+  content: '';
+  background-color: #fafafa;
+  border-radius: 2px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+#nav-sec #nav-btn span::after {
+  top: -7px;
+}
+
+#nav-sec #nav-btn span::before {
+  bottom: -7px;
+}
+
+#nav-sec #nav-btn.animate > span {
+  height: 0;
+}
+
+#nav-sec #nav-btn.animate > span::after,
+#nav-sec #nav-btn.animate > span::before {
+  background-color: #fafafa;
+  top: 1px;
+}
+
+#nav-sec #nav-btn.animate > span:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#nav-sec #nav-btn.animate > span:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #nav-sec #nav-btn {
+    top: 45px;
+    right: 60px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #nav-sec #nav-btn {
+    top: 45px;
+    right: 60px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #nav-sec #nav-btn {
+    top: 45px;
+    right: 60px;
+  }
+  #nav-sec #nav-btn span,
+  #nav-sec #nav-btn > span::after,
+  #nav-sec #nav-btn > span::before {
+    background-color: #061225;
+  }
+}
+
+#nav-sec #nav-scrolled {
+  background: #061225;
+  position: fixed;
+  border-radius: 2px;
+  width: 82px;
+  top: 9px;
+  right: 3px;
+  padding: 50px 10px 10px 10px;
+  z-index: 100;
+  -webkit-box-shadow: #fafafa 0 0 5px;
+          box-shadow: #fafafa 0 0 5px;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #nav-sec #nav-scrolled {
+    top: 18px;
+    right: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #nav-sec #nav-scrolled {
+    top: 18px;
+    right: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #nav-sec #nav-scrolled {
+    display: none;
+  }
+}
+
+#nav-sec #nav-menu {
+  background-color: #061225;
+  color: #fafafa;
+  position: fixed;
+  display: none;
+  border-radius: 2px;
+  top: 70px;
+  right: 3px;
+  padding: 10px 10px 10px 10px;
+  z-index: 101;
+  -webkit-box-shadow: #fafafa 0 0 5px;
+          box-shadow: #fafafa 0 0 5px;
+}
+
+#nav-sec #nav-menu #nav-list > ul li {
+  width: 100%;
+  position: relative;
+}
+
+#nav-sec #nav-menu #nav-list > ul a {
+  display: block;
+  text-align: center;
+  margin: 17px 0;
+  font-size: 1em;
+  font-weight: 100;
+}
+
+#nav-sec #nav-menu #nav-list > ul li ul {
+  margin: 0;
+  border-radius: 2px;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  right: 120%;
+  top: -15%;
+  font-size: 16px;
+  background-color: #061225;
+  color: #fafafa;
+  padding: 0px 20px;
+  -webkit-transform: translate3d(30px, 0, 0);
+          transform: translate3d(30px, 0, 0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: #fafafa 0 0 5px;
+          box-shadow: #fafafa 0 0 5px;
+}
+
+#nav-sec #nav-menu .nav-link {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#nav-sec #nav-menu .nav-link:hover {
+  color: #746E90;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #nav-sec #nav-menu {
+    top: 78px;
+    right: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #nav-sec #nav-menu {
+    top: 78px;
+    right: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #nav-sec #nav-menu {
+    top: 15px;
+    right: 18px;
+    padding: 50px 10px 10px 10px;
+  }
+  #nav-sec #nav-menu #nav-list > ul li:hover ul {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------- *\ 
+         Socials Nav
+\* ----------------------- */
+/* ref: https://codemyui.com/hamburger-menu-social-sharing-icons/ */
+#socials {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100%;
+  height: 50px;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.3rem;
+  z-index: 101;
+}
+
+#socials span {
+  position: absolute;
+  padding: 15px 10px;
+  background: #061225;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: #fafafa 0 0 5px;
+          box-shadow: #fafafa 0 0 5px;
+}
+
+#socials span.hidden {
+  visibility: hidden;
+}
+
+#socials span:last-child {
+  padding: 13px 15px;
+  font-size: 1.3rem;
+}
+
+#socials span:nth-child(1), #socials span:nth-child(2), #socials span:nth-child(3) {
+  padding: 10px 15px;
+}
+
+#socials span:nth-child(1).show {
+  -webkit-transform: rotate(180deg) translate(90px) rotate(180deg);
+          transform: rotate(180deg) translate(90px) rotate(180deg);
+}
+
+#socials span:nth-child(2).show {
+  -webkit-transform: rotate(225deg) translate(90px) rotate(135deg);
+          transform: rotate(225deg) translate(90px) rotate(135deg);
+}
+
+#socials span:nth-child(3).show {
+  -webkit-transform: rotate(270deg) translate(90px) rotate(90deg);
+          transform: rotate(270deg) translate(90px) rotate(90deg);
+}
+
+#socials span > a > i {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#socials span > a > i:hover {
+  color: #746E90;
+}
+
+#socials #socials-btn:hover {
+  color: #746E90;
+}
+
+/* ----------------------- *\ 
+         Footer Nav
+\* ----------------------- */
+/* ref: https://codepen.io/mvaneijgen/pen/yMpgpE */
+#footer-scroll {
+  height: 100px;
+  background-color: #061225;
+}
+
+#footer-scroll #footer-ruler {
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 12px;
+  -webkit-box-shadow: inset 0 12px 12px -12px #fafafa;
+          box-shadow: inset 0 12px 12px -12px #fafafa;
+}
+
+#footer-scroll .footer-content {
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  color: #fafafa;
+  font-size: 1.1rem;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  transition: transform, opacity;
+  transition: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+#footer-scroll .footer-content a {
+  word-spacing: 10px;
+  font-size: 1.3rem;
+}
+
+#footer-scroll .footer-content > a > i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#footer-scroll .footer-content.show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+#footer-scroll .footer-content > a > i:hover {
+  color: #746E90;
+}
+/*# sourceMappingURL=main.css.map */

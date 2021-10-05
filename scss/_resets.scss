@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+// Reduce animation when preferred
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+html {
+    background-color: $body;
+}
+section {
+    width: 100vw;
+    min-height: 100vh;
+}
+body {
+    font-family: $body-font;
+    color: $body;
+
+    display: flex;
+    flex-direction: column;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+.iconify {
+    width: 1.9rem;
+    height: 1.9rem;
+}
