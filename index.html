@@ -35,82 +35,64 @@
 
         <!-- Navbar -->
         <nav>
-            <div id="nav-sec">
+            <div id="mobile-nav" class="d-xl-none ">
                 <div id="nav-btn">
                     <span class="lines"></span>
                 </div>
-                <div id="nav-scrolled"></div>
+                <div id="nav-bg"></div>
                 <div id="nav-menu">
-                    <div id="nav-list">
+                    <div id="nav-list" class="nav-active">
                         <ul>
                             <li>
                                 <a class="nav-link" href="#home" aria-label="Home Section">
                                     <span class="sr-only">Home Page</span>
                                     <span class="iconify" data-icon="ant-design:home-filled"></span>
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="#home" aria-label="Home">
-                                            Home
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a class="nav-link" href="#about" aria-label="About Section">
                                     <span class="sr-only">About Me</span>
                                     <span class="iconify" data-icon="teenyicons:user-circle-solid"></span>
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="#about" aria-label="Profile Section">
-                                            About
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a class="nav-link" href="#projects" aria-label="Projects Section">
                                     <span class="sr-only">Project Section</span>
                                     <span class="iconify" data-icon="fa-solid:briefcase"></span>
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="#projects" aria-label="Projects Section">
-                                            Projects
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a class="nav-link" href="#skills" aria-label="Skills Section">
                                     <span class="sr-only">Skills Section</span>
                                     <span class="iconify" data-icon="fa-solid:code"></span>
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="#skills" aria-label="Skills Section">
-                                            Skills
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a class="nav-link" href="#contact" aria-label="Contact Section">
                                     <span class="sr-only">Contact Section</span>
                                     <span class="iconify" data-icon="whh:emailalt"></span>
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="#contact" aria-label="Contact Section">
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div id="lg-nav" class="d-none d-xl-flex sticky-top nav-active">
+                <a href="#home" aria-label="Home">
+                    Home
+                </a>
+                <a href="#about" aria-label="Profile Section">
+                    About
+                </a>
+                <a href="#projects" aria-label="Projects Section">
+                    Projects
+                </a>
+                <a href="#skills" aria-label="Skills Section">
+                    Skills
+                </a>
+                <a href="#contact" aria-label="Contact Section">
+                    Contact
+                </a>
             </div>
         </nav>
 

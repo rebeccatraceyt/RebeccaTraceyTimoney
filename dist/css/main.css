@@ -61,13 +61,19 @@ li {
 /* ----------------------- *\ 
            Navbar
 \* ----------------------- */
-#nav-sec {
+@media (min-width: 1025px) {
+  nav {
+    background-color: #061225;
+  }
+}
+
+#mobile-nav {
   float: right;
   margin: 10px 20px;
   text-align: center;
 }
 
-#nav-sec #nav-btn {
+#mobile-nav #nav-btn {
   background: transparent;
   border: none;
   height: 30px;
@@ -79,11 +85,11 @@ li {
   cursor: pointer;
 }
 
-#nav-sec #nav-btn:focus {
+#mobile-nav #nav-btn:focus {
   outline: none;
 }
 
-#nav-sec #nav-btn span {
+#mobile-nav #nav-btn span {
   background-color: #fafafa;
   border-radius: 2px;
   height: 3px;
@@ -93,7 +99,7 @@ li {
   transition: height 100ms;
 }
 
-#nav-sec #nav-btn span::after, #nav-sec #nav-btn span::before {
+#mobile-nav #nav-btn span::after, #mobile-nav #nav-btn span::before {
   content: '';
   background-color: #fafafa;
   border-radius: 2px;
@@ -106,61 +112,61 @@ li {
   transition: all 200ms;
 }
 
-#nav-sec #nav-btn span::after {
+#mobile-nav #nav-btn span::after {
   top: -7px;
 }
 
-#nav-sec #nav-btn span::before {
+#mobile-nav #nav-btn span::before {
   bottom: -7px;
 }
 
-#nav-sec #nav-btn.animate > span {
+#mobile-nav #nav-btn.animate > span {
   height: 0;
 }
 
-#nav-sec #nav-btn.animate > span::after,
-#nav-sec #nav-btn.animate > span::before {
+#mobile-nav #nav-btn.animate > span::after,
+#mobile-nav #nav-btn.animate > span::before {
   background-color: #fafafa;
   top: 1px;
 }
 
-#nav-sec #nav-btn.animate > span:after {
+#mobile-nav #nav-btn.animate > span:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#nav-sec #nav-btn.animate > span:before {
+#mobile-nav #nav-btn.animate > span:before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  #nav-sec #nav-btn {
+  #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  #nav-sec #nav-btn {
+  #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
   }
 }
 
 @media (min-width: 1025px) {
-  #nav-sec #nav-btn {
+  #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
   }
-  #nav-sec #nav-btn span,
-  #nav-sec #nav-btn > span::after,
-  #nav-sec #nav-btn > span::before {
+  #mobile-nav #nav-btn span,
+  #mobile-nav #nav-btn > span::after,
+  #mobile-nav #nav-btn > span::before {
     background-color: #061225;
   }
 }
 
-#nav-sec #nav-scrolled {
+#mobile-nav #nav-bg {
   background: #061225;
   position: fixed;
   border-radius: 2px;
@@ -174,26 +180,26 @@ li {
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  #nav-sec #nav-scrolled {
+  #mobile-nav #nav-bg {
     top: 18px;
     right: 18px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  #nav-sec #nav-scrolled {
+  #mobile-nav #nav-bg {
     top: 18px;
     right: 18px;
   }
 }
 
 @media (min-width: 1025px) {
-  #nav-sec #nav-scrolled {
+  #mobile-nav #nav-bg {
     display: none;
   }
 }
 
-#nav-sec #nav-menu {
+#mobile-nav #nav-menu {
   background-color: #061225;
   color: #fafafa;
   position: fixed;
@@ -207,12 +213,12 @@ li {
           box-shadow: #fafafa 0 0 5px;
 }
 
-#nav-sec #nav-menu #nav-list > ul li {
+#mobile-nav #nav-menu #nav-list > ul li {
   width: 100%;
   position: relative;
 }
 
-#nav-sec #nav-menu #nav-list > ul a {
+#mobile-nav #nav-menu #nav-list > ul a {
   display: block;
   text-align: center;
   margin: 17px 0;
@@ -220,62 +226,64 @@ li {
   font-weight: 100;
 }
 
-#nav-sec #nav-menu #nav-list > ul li ul {
-  margin: 0;
-  border-radius: 2px;
-  position: absolute;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 2px;
-  right: 120%;
-  top: -15%;
-  font-size: 16px;
-  background-color: #061225;
-  color: #fafafa;
-  padding: 0px 20px;
-  -webkit-transform: translate3d(30px, 0, 0);
-          transform: translate3d(30px, 0, 0);
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-box-shadow: #fafafa 0 0 5px;
-          box-shadow: #fafafa 0 0 5px;
-}
-
-#nav-sec #nav-menu .nav-link {
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-#nav-sec #nav-menu .nav-link:hover {
+#mobile-nav #nav-menu #nav-list > ul a.active {
   color: #746E90;
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
-  #nav-sec #nav-menu {
+  #mobile-nav #nav-menu {
     top: 78px;
     right: 18px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-  #nav-sec #nav-menu {
+  #mobile-nav #nav-menu {
     top: 78px;
     right: 18px;
   }
 }
 
-@media (min-width: 1025px) {
-  #nav-sec #nav-menu {
-    top: 15px;
-    right: 18px;
-    padding: 50px 10px 10px 10px;
-  }
-  #nav-sec #nav-menu #nav-list > ul li:hover ul {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
+#lg-nav {
+  float: right;
+  margin: 15px;
+  color: #fafafa;
+  text-align: center;
+}
+
+#lg-nav > a {
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  position: relative;
+}
+
+#lg-nav > a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fafafa;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#lg-nav > a.active {
+  color: #746E90;
+}
+
+#lg-nav > a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 /* ----------------------- *\ 

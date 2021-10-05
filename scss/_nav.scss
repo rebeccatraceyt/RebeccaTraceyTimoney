@@ -2,7 +2,13 @@
            Navbar
 \* ----------------------- */
 
-#nav-sec {
+nav {
+    @include desktop {
+        background-color: $body;
+    }
+}
+
+#mobile-nav {
     float: right;
     margin: 10px 20px;
     text-align: center;
@@ -91,7 +97,7 @@
         }
     }
 
-    #nav-scrolled {
+    #nav-bg {
         background: $body;
         position: fixed;
         border-radius: 2px;
@@ -140,30 +146,8 @@
             margin: 17px 0;
             font-size: 1em;
             font-weight: 100;
-        }
 
-        #nav-list > ul li ul {
-            margin: 0;
-            border-radius: 2px;
-            position: absolute;
-            text-transform: uppercase;
-            font-family: $title-font;
-            letter-spacing: 2px;
-            right: 120%;
-            top: -15%;
-            font-size: 16px;
-            background-color: $body;
-            color: $white;
-            padding: 0px 20px;
-            transform: translate3d(30px, 0, 0);
-            opacity: 0;
-            transition: all 0.3s ease;
-            box-shadow: $white 0 0 5px;
-        }
-
-        .nav-link {
-            transition: all 0.5s ease 0s;
-            &:hover {
+            &.active {
                 color: $light-purple;
             }
         }
@@ -177,18 +161,51 @@
             top: 78px;
             right: 18px;
         }
+    }
+}
 
-        @include desktop {
-            top: 15px;
-            right: 18px;
-            padding: 50px 10px 10px 10px;
+#lg-nav {
+    float: right;
+    margin: 15px;
+    color: $white;
+    text-align: center;
 
-            #nav-list > ul li:hover ul {
-                transform: translate3d(0, 0, 0);
-                opacity: 1;
-            }
+
+    & > a {
+        margin: 15px;
+        font-family: $title-font;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        position: relative;
+
+        &::before {
+            // ref: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        &.active {
+            color: $light-purple;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
         }
     }
+
+
+
+
+
 }
 
 /* ----------------------- *\ 
