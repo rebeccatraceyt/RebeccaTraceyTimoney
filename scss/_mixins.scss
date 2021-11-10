@@ -27,3 +27,35 @@
         @content;
     }
 }
+
+@mixin pageMargin {
+    margin: 15% 0%;
+    
+    @include tablet {
+        margin: 15% 0% 2%;
+    }
+
+    @include largeTablet {
+        margin: 15% 0% 2%;
+    }
+
+    @include desktop {
+        margin: 5% 0%;
+    }
+}
+
+@mixin contentMargin {
+    margin: 4% 2%;
+
+    @include tablet {
+        margin: 5%;
+    }
+
+    @include largeTablet {
+        margin: 7%;
+    }
+
+    @include desktop {
+        margin: 7% 3% 0%;
+    }
+}

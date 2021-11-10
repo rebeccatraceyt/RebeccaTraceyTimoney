@@ -24,6 +24,7 @@
 
 html {
   background-color: #061225;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -41,6 +42,36 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: linear-gradient(-30deg, #438796, #716387);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 10s ease-in-out infinite;
+          animation: gradient 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes gradient {
+  /* ref: https://codepen.io/hylobates-lar/pen/qBbQeON */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  /* ref: https://codepen.io/hylobates-lar/pen/qBbQeON */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 a, a:hover, a:focus, a:active {
@@ -63,13 +94,13 @@ li {
 \* ----------------------- */
 @media (min-width: 1025px) {
   nav {
-    background-color: #061225;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
   }
 }
 
 #mobile-nav {
-  float: right;
-  margin: 10px 20px;
   text-align: center;
 }
 
@@ -226,10 +257,6 @@ li {
   font-weight: 100;
 }
 
-#mobile-nav #nav-menu #nav-list > ul a.active {
-  color: #746E90;
-}
-
 @media (min-width: 700px) and (max-width: 991px) {
   #mobile-nav #nav-menu {
     top: 78px;
@@ -246,8 +273,8 @@ li {
 
 #lg-nav {
   float: right;
-  margin: 15px;
-  color: #fafafa;
+  margin: 10px;
+  color: #061225;
   text-align: center;
 }
 
@@ -268,17 +295,13 @@ li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fafafa;
+  background-color: #061225;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-#lg-nav > a.active {
-  color: #746E90;
 }
 
 #lg-nav > a:hover::before {
@@ -418,5 +441,193 @@ li {
 
 #footer-scroll .footer-content > a > i:hover {
   color: #746E90;
+}
+
+#page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #page-title h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #page-title h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #page-title h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #home {
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #home {
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #home {
+    padding: 0 5%;
+  }
+}
+
+#home #home-content {
+  min-height: 100vh;
+}
+
+#home #home-content #home-text {
+  max-width: 90%;
+  text-align: left;
+  margin: 0% 20% 15% 2%;
+  /* Text Animation */
+  /* Cursor Animation */
+}
+
+#home #home-content #home-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  border-right: solid 3px #fafafa;
+  letter-spacing: 2px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  -webkit-animation: text 2s steps(29, end) 0.5s 1 normal both, cursor 600ms steps(29, end) infinite;
+          animation: text 2s steps(29, end) 0.5s 1 normal both, cursor 600ms steps(29, end) infinite;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #home #home-content #home-text h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #home #home-content #home-text h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #home #home-content #home-text h1 {
+    font-size: 3.2rem;
+  }
+}
+
+@-webkit-keyframes text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes cursor {
+  from {
+    border-right-color: #fafafa;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: #fafafa;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#home #home-content #home-text h5 {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #home #home-content #home-text h5 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #home #home-content #home-text h5 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #home #home-content #home-text h5 {
+    font-size: 1.9rem;
+  }
+}
+
+#home #home-content #home-text p {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #home #home-content #home-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #home #home-content #home-text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #home #home-content #home-text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #home #home-content #home-text {
+    max-width: 90%;
+    margin: 0 20% 20% 1%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #home #home-content #home-text {
+    max-width: 80%;
+    margin: 0 20% 20% 1%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #home #home-content #home-text {
+    max-width: 60%;
+    margin: 0 15% 10% 1%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

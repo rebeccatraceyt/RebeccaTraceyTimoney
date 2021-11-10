@@ -17,6 +17,7 @@
 }
 html {
     background-color: $body;
+    scroll-behavior: smooth;
 }
 section {
     width: 100vw;
@@ -28,6 +29,23 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    background: linear-gradient(-30deg, $blue, $purple);
+    background-size: 400% 400%;
+    animation: gradient 10s ease-in-out infinite;
+    
+    @keyframes gradient {
+        /* ref: https://codepen.io/hylobates-lar/pen/qBbQeON */
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
 }
 a, a:hover, a:focus, a:active {
     text-decoration: none;
