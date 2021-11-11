@@ -492,7 +492,7 @@ li {
 #home #home-content #home-text {
   max-width: 90%;
   text-align: left;
-  margin: 0% 20% 15% 2%;
+  margin: 0% 20% 18% 2%;
   /* Text Animation */
   /* Cursor Animation */
 }
@@ -608,6 +608,50 @@ li {
   #home #home-content #home-text p {
     font-size: 1.4rem;
   }
+}
+
+#home #home-content #home-text p a:hover, #home #home-content #home-text p a:focus, #home #home-content #home-text p a:active {
+  color: #fafafa;
+}
+
+#home #home-content #home-text .btns {
+  border-radius: 2px;
+  background-color: #061225;
+  font-size: .9rem;
+  font-family: "Poppins", sans-serif;
+  color: #fafafa;
+  font-weight: 700;
+  padding: 15px 20px;
+  -webkit-box-shadow: #061225 0 0 5px;
+          box-shadow: #061225 0 0 5px;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #home #home-content #home-text .btns {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #home #home-content #home-text .btns {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  #home #home-content #home-text .btns {
+    font-size: 1.2rem;
+  }
+}
+
+#home #home-content #home-text #home-btn {
+  margin-right: 10px;
+}
+
+#home #home-content #home-text .btns:hover {
+  background-color: #fafafa;
+  color: #061225;
+  border: 2px solid #061225;
 }
 
 @media (min-width: 700px) and (max-width: 991px) {

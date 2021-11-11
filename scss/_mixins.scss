@@ -1,13 +1,18 @@
 @mixin btnStyle {
     border-radius: 2px;
-    border: 2px solid $body;
-
-    font-size: 1.2rem;
+    background-color: $body;
+    font-size: .9rem;
     font-family: $title-font;
-    color: $body;
+    color: $white;
     font-weight: 700;
-    
+    padding: 15px 20px;
     box-shadow: $body 0 0 5px;
+}
+
+@mixin btnHover {
+    background-color: $white;
+    color: $body;
+    border: 2px solid $body;
 }
 
 @mixin tablet {
