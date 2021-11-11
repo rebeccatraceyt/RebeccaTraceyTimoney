@@ -5,7 +5,7 @@
 
 <h3>
 <strong>Welcome to my <a href="">Portfolio</a>!</strong> <br />
-Hi, I'm Rebeca, a Junior Web Developer based in Dublin, Ireland. <br>
+Hi, I'm Rebeca, a Junior Front End Developer based in Dublin, Ireland. <br>
 </h3>
 <p>This fully responsive website was designed by, and for, me. The focus of the site is to create an online presence as a developer, allowing others to find out more about me, including previous projects, and how to get in contact for future ones. 
 </p>
@@ -28,7 +28,7 @@ Hi, I'm Rebeca, a Junior Web Developer based in Dublin, Ireland. <br>
 ### User Stories
 #### As a visitor, I want to:
 1. Easily navigate through the website to find the relevant content, effortlessly.
-2. Learn about the developer's background in order to find out more about them.
+2. Download a copy of the developer's paper CV to find relevant information.
 3. Easily navigate to previous projects of the developer, to learn about their style of work.
 4. Easily find a point of contact in order to get in touch with the developer.
 
@@ -59,7 +59,7 @@ Broken into three categories, the website will focus on the following target aud
 
 The website needs to enable the **user** to:
 - Retrieve desired information:
-     - Biographical information
+     - Resumé
      - Previous projects
      - Contact information
 
@@ -67,7 +67,7 @@ The website needs to enable the **developer** to:
 - Develop an online presence 
 - Provide an easily navigable website for users to find relevant information:
      - Projects
-     - Biographical information
+     - CV
 - Provide a channel of communication for enquires
 
 With these goals in mind, a strategy table was created to determine the trade-off between importance and viability with the following results:
@@ -83,9 +83,11 @@ A scope was defined in order to clearly identify what needed to be done in order
           - Biographic information
           - Projects
           - Contact details
+          - Downloadable CV
 - **Functionality Requirements**
      - The user will be able to:
           - Easily navigate through the site in order to find the information they want
+          - Easy access to downloadable CV
           - Contact the developer directly through their chosen channel of communication
 
 #### Structure
@@ -96,23 +98,11 @@ The information architecture was organized in a **hierarchial tree structure** i
 </p>
 
 #### Skeleton 
-High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=0%3A1 "Link to Portfolio Workspace") with providing a positive user experience in mind:
+High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio "Link to Portfolio Workspace") with providing a positive user experience in mind:
 
 <div align="center">
-
-<p><strong>Homepage</strong></p>
-<img src="markdown-files/home.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
-<p><strong>Profile Page</strong></p>
-<img src="markdown-files/works.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
-<p><strong>Project Works Page</strong></p>
-<img src="markdown-files/works.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
-<p><strong>Skills Page</strong></p>
-<img src="markdown-files/works.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
-<p><strong>Contact Page</strong></p>
-<img src="markdown-files/contact.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
-
+<img src="markdown-files/wireframe.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
 </div>
-
 
 #### Surface
 
@@ -173,20 +163,11 @@ The chosen colour scheme is reflective of the developers style of creativity. Th
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wiki")
-- [Python](https://www.python.org/ "Link to Python Homepage")
-
 ### Tools Used
 - [Git](https://git-scm.com/ "Link to Git homepage")
      - Git was used for version control to commit to Git and push to Heroku.
 - [GitHub](https://github.com/ "Link to GitHub")
      - GitHub was used to store the project repository, after pushing.
-- [Heroku](https://id.heroku.com/login "Link to Heroku login page")
-     -  Heroku was used in order to deploy the website.
-- [Django](https://www.djangoproject.com/ "Link to Django Homepage")
-     - Django was used as the web framework for the application.
-- [AWS](https://aws.amazon.com/ "Link to AWS Homepage")
-     - The Amazon Web Service **s3 Bucket** was used to store static and media files in the production database.
-
 - [Figma](https://www.figma.com/ "Link to Figma homepage")
      - Figma was used to create the wireframes during the design phase of the project.
 - [Mockup Generator](https://techsini.com/multi-mockup/index.php "Link Mockup Geneerator Homepage")
@@ -201,21 +182,14 @@ The chosen colour scheme is reflective of the developers style of creativity. Th
      - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
 - [jQuery](https://jquery.com/ "Link to jQuery page")
      - jQuery was used to simplify the JavaScript code used.
+- [Sass](https://sass-lang.com/ "Link to Sass page")
+     - Sass extension was used to implement a preprocessor to compile CSS. 
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
     - Google fonts was used to import the fonts **"Indie Flower"** and **"Work Sans"** into the style.css file. These fonts were used throughout the project.
 - [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page")
      - jQuery Validation was used to simplify form validation for the **Contact Form**.
 - [SweetAlert2](https://sweetalert2.github.io/ "Link to Sweet Alert 2 page")
      - SweetAlert2 was used to customise the **Contact Form** success message for UX 
-- [Jinja](http://jinja.pocoo.org/docs/2.10/ "Link to Jinja information")
-     - Jinja templating language was used to simplify and display backend data in html.
-### Database Management
-- [SQLite](https://www.sqlite.org/index.html "Link to SQLite site")
-     - SQLite was used as a single-file database during development.
-- [Heroku Postgres](https://www.heroku.com/postgres "Link to Heroku Postgres site")
-     - Heroku Postgres was used for production database, provided by Heroku.
-
-
 
 [Back to top ⇧](#table-of-contents)
 
@@ -276,10 +250,10 @@ This will trigger a new gitPod workspace to be created from the code in github w
 Once a local clone is created, follow the below steps to deploy locally:
 1. Locate the [GitHub Repository](https://github.com/rebeccatraceyt/RebeccaTraceyTimoney "Link to GitHub Repo").
 2. At the top of the repository, select Settings from the menu items.
-3. Scroll down the Settings page to the "GitHub Pages" section.
-4. Under "Source" click the drop-down menu labelled "None" and select "Master Branch".
-5. Upon selection, the page will automatically refresh meaning that the website is now deployed.
-6. Scroll back down to the "GitHub Pages" section to retrieve the deployed link.
+3. Scroll down the navigation section of the Settings page to the "Pages" section.
+4. Under "Source" click the drop-down menu labelled "None" and select **"Master Branch"**.
+5. Upon clicking **Save**, the page will automatically refresh meaning that the website is now deployed.
+6. The deployed link will now be available.
 
 <div align='center'>
 <h2><span style='font-size:20px;'>&#127882;</span> Congratulations! <span style='font-size:20px;'>&#127882;</span> </h2>
