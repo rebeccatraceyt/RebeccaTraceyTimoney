@@ -1,9 +1,11 @@
+/* ----------------------- *\ 
+    Main CSS Style Rules
+\* ----------------------- */
+
 @import './variables';
 @import './resets';
 @import './mixins';
 @import './nav';
-@import './general-styling';
-
 
 // Home Section
 #home {
@@ -148,6 +150,131 @@
                 max-width: 60%;
                 margin: 0 15% 10% 1%;
             }
+        }
+    }
+}
+
+
+// Page Title Styling
+.page-top {
+
+    padding: 10% 5%;
+    margin-top: 15%;
+
+    @include tablet {
+        padding: 0 10%;
+    }
+
+    @include largeTablet {
+        padding: 0 10%;
+    }
+
+    @include desktop {
+        padding: 0 5%;
+    }
+
+
+    .page-title {
+        h1 {
+            font-family: $title-font;
+            font-size: 2rem;
+            letter-spacing: 2px;
+    
+            @include tablet {
+                font-size: 2.8rem;
+            }
+    
+            @include largeTablet {
+                font-size: 3.2rem;
+            }
+    
+            @include desktop {
+                font-size: 3.2rem;
+            }
+        }
+    }
+}
+
+
+
+// Projects Section
+#project-carousel {
+
+    padding: 10% 5%;
+    background-color: $white;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -webkit-box-shadow: $body-opaque 0px 0 10px;
+    -moz-box-shadow: $body-opaque 0 0 10px;
+    box-shadow: $body-opaque 0 0 10px;
+
+    .carousel-indicators {
+        li {
+            background-color: $body;   
+        }
+    }
+
+    .carousel-inner{
+        width: 100%;
+        height: 100%;
+        
+        .card {
+            padding: 5%;
+            border: none;
+
+            img {
+                padding: 5%;
+            }
+
+            .card-body {
+                .card-title {
+                    font-family: $title-font;
+                    color: $body;
+                    font-weight: 600;
+                }
+
+                .card-divider {
+                    /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
+                    margin: 10px 0;
+                    border: 0;
+                    clear: both;
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 25%;
+                    
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                    -webkit-box-shadow: inset 0 12px 12px -12px $body-opaque;
+                    -moz-box-shadow: inset 0 12px 12px -12px $body-opaque;
+                    box-shadow: inset 0 12px 12px -12px $body-opaque;
+                }
+                .card-link {
+                    background-color: $body;
+                    color: $white;
+                    padding: 3% 7%;
+
+                    border-radius: 2px;
+                    font-size: .9rem;
+                    font-family: $title-font;
+                    -webkit-box-shadow: $body 0 0 2px;
+                    -moz-box-shadow: $body 0 0 2px;
+                    box-shadow: $body 0 0 2px;
+                }
+                .card-link:hover {
+                    @include btnHover;
+                }
+            }
+        }
+    }
+
+    .carousel-btn{
+        i {
+            color: $body-opaque;
+            font-size: 1.5rem;
         }
     }
 }

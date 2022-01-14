@@ -5,7 +5,7 @@
 
 <h3>
 <strong>Welcome to my <a href="">Portfolio</a>!</strong> <br />
-Hi, I'm Rebeca, a Junior Front End Developer based in Dublin, Ireland. <br>
+Hi, I'm Rebeca, a Software Developer and Tutor based in Dublin, Ireland. <br>
 </h3>
 <p>This fully responsive website was designed by, and for, me. The focus of the site is to create an online presence as a developer, allowing others to find out more about me, including previous projects, and how to get in contact for future ones. 
 </p>

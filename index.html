@@ -35,6 +35,8 @@
 
         <!-- Navbar -->
         <nav>
+
+            <!-- Mobile Navbar -->
             <div id="mobile-nav" class="d-xl-none ">
                 <div id="nav-btn">
                     <span class="lines"></span>
@@ -71,6 +73,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Desktop Navbar -->
             <div id="lg-nav" class="d-none d-xl-flex">
                 <a href="#home" aria-label="Home">
                     Home
@@ -87,13 +91,13 @@
             </div>
         </nav>
 
-        <!-- Intro Content -->
+        <!-- Home Content -->
         <section id="home" class="container-fluid" aria-label="Intro Section">
             <div id="home-content" class="row align-items-end">
                 <div class="col-12" id="home-text">
                     <h1>Hi, I'm Rebecca!</h1>
-                    <h5>Junior Front End Developer</h5>
-                    <p>Driven by curiosity and a passion for creative solutions, I love to challenge my skills with each project I undertake. A firm believer in the <strong><a href="http://lawsofsimplicity.com/" target="_blank">Law of Simplicity</a></strong>, I create simple and intuitive designs through clean code, enhancing the online user experience, one line of code at a time.</p>
+                    <h5>Software Developer and Tutor</h5>
+                    <p>Driven by curiosity and a passion for creative solutions, I love to challenge my skills with each project I undertake.</p> <p>A firm believer in the <strong><a href="http://lawsofsimplicity.com/" target="_blank">Law of Simplicity</a></strong>, I create simple and intuitive designs through clean code, enhancing the online user experience, one line of code at a time.</p>
                     <a href="#projects" aria-label="Projects Section" class="btns" id="home-btn">
                         View Projects
                     </a>
@@ -103,7 +107,84 @@
                 </div>
             </div>
         </section>
+
+        <!-- Projects Content -->
+        <section id="projects" class="container-fluid" aria-label="Projects Section">
+            <div class="page-top row">
+                <div class="col-12 page-title">
+                    <h1>Project Work</h1>
+                    <!-- <hr class="line-divider"> -->
+                </div>
+            </div>
+            <div id="project-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#project-carousel" data-slide-to="1"></li>
+                    <li data-target="#project-carousel" data-slide-to="2"></li>
+                    <li data-target="#project-carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="dist/imgs/kryan2.png" class="card-img-top" alt="Multi Screen Render of Kryan Live Site">
+                            <div class="card-body">
+                                <h5 class="card-title">Kryan Live</h5>
+                                <hr class="card-divider">
+                                <p class="card-text">This comprehensive website was designed for the artist known as Kryan. The focus of the site is to create an online presence allowing members of the media, as well as new and current fans, to find out relevant information and to get to know Kryan.</p>
+                                <a href="https://rebeccatraceyt.github.io/KryanLive/" class="card-link">Live Site</a>
+                                <a href="https://github.com/rebeccatraceyt/KryanLive" class="card-link">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="dist/imgs/blank2.png" class="d-block w-100" alt="Multi Screen Render of What The Blank Live Site">
+                            <div class="card-body">
+                                <h5 class="card-title">Blank!</h5>
+                                <hr class="card-divider">
+                                <p class="card-text">A web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favourite music genre, using a fun and intuitive user interface.</p>
+                                <a href="https://rebeccatraceyt.github.io/WhatTheBlank/" class="card-link">Live Site</a>
+                                <a href="https://github.com/rebeccatraceyt/WhatTheBlank" class="card-link">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="dist/imgs/bake2.png" class="d-block w-100" alt="Multi Screen Render of Bake It Til You Make Live Site">
+                            <div class="card-body">
+                                <h5 class="card-title">Bake It Til You Make It</h5>
+                                <hr class="card-divider">
+                                <p class="card-text">A community-based web application for those who love the art of baking, where users can search and share their favourite creations. Inspired by the old-school baking book (full to the brim with loose paper and notes)!</p>
+                                <a href="https://bake-it-til-you-make-it.herokuapp.com/" class="card-link">Live Site</a>
+                                <a href="https://github.com/rebeccatraceyt/bake-it-til-you-make-it" class="card-link">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="dist/imgs/delphin2.png" class="d-block w-100" alt="Multi Screen Render of Delphin Lifesaving Club Live Site">
+                            <div class="card-body">
+                                <h5 class="card-title">Delphin Lifesaving Club</h5>
+                                <hr class="card-divider">
+                                <p class="card-text">The Delphin Lifesaving Club online shop provides a virtual shopping environment for club members (future and current) to browse and purchase Delphin products, including class credits and club apparel, and provide club information. </p>
+                                <a href="https://delphin-lifesavingclub.herokuapp.com/" class="card-link">Live Site</a>
+                                <a href="https://github.com/rebeccatraceyt/delphin_lifesavingclub" class="card-link">GitHub Repo</a>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+                    <span class="carousel-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+                    <span class="carousel-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
         
+        <!-- Footer Content -->
         <footer>
             <div id="socials">
                 <span class="hidden">
