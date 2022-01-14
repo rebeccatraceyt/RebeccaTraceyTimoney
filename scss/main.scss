@@ -162,7 +162,7 @@
     margin-top: 15%;
 
     @include tablet {
-        padding: 0 10%;
+        padding: 0 5%;
     }
 
     @include largeTablet {
@@ -211,6 +211,16 @@
     -moz-box-shadow: $body-opaque 0 0 10px;
     box-shadow: $body-opaque 0 0 10px;
 
+    @include tablet {
+        margin: 10%;
+    }
+
+    @include largeTablet {
+    }
+
+    @include desktop {
+    }
+
     .carousel-indicators {
         li {
             background-color: $body;   
@@ -225,8 +235,28 @@
             padding: 5%;
             border: none;
 
+            @include tablet {
+                padding: 4%;
+            }
+
+            @include largeTablet {
+            }
+
+            @include desktop {
+            }
+
             img {
                 padding: 5%;
+
+                @include tablet {
+                    padding: 0;
+                }
+
+                @include largeTablet {
+                }
+
+                @include desktop {
+                }
             }
 
             .card-body {
@@ -234,6 +264,16 @@
                     font-family: $title-font;
                     color: $body;
                     font-weight: 600;
+
+                    @include tablet {
+                        font-size: 2rem;
+                    }
+
+                    @include largeTablet {
+                    }
+
+                    @include desktop {
+                    }
                 }
 
                 .card-divider {
@@ -263,6 +303,18 @@
                     -webkit-box-shadow: $body 0 0 2px;
                     -moz-box-shadow: $body 0 0 2px;
                     box-shadow: $body 0 0 2px;
+
+                    @include tablet {
+                        padding: 2% 5%;
+                        border-radius: 5px;
+                        font-size: 1rem;
+                    }
+
+                    @include largeTablet {
+                    }
+
+                    @include desktop {
+                    }
                 }
                 .card-link:hover {
                     @include btnHover;
@@ -271,10 +323,23 @@
         }
     }
 
-    .carousel-btn{
-        i {
-            color: $body-opaque;
-            font-size: 1.5rem;
+    .carousel-control-prev,
+    .carousel-control-next {
+        .carousel-btn{
+            i {
+                color: $body-opaque;
+                font-size: 1.5rem;
+            }
+        }
+
+        @include tablet {
+            width: 10%;
+        }
+
+        @include largeTablet {
+        }
+
+        @include desktop {
         }
     }
 }

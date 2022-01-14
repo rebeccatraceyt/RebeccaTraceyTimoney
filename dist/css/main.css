@@ -667,7 +667,7 @@ li {
 
 @media (min-width: 700px) and (max-width: 991px) {
   .page-top {
-    padding: 0 10%;
+    padding: 0 5%;
   }
 }
 
@@ -715,6 +715,12 @@ li {
   box-shadow: rgba(6, 18, 37, 0.8) 0 0 10px;
 }
 
+@media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel {
+    margin: 10%;
+  }
+}
+
 #project-carousel .carousel-indicators li {
   background-color: #061225;
 }
@@ -729,14 +735,32 @@ li {
   border: none;
 }
 
+@media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-inner .card {
+    padding: 4%;
+  }
+}
+
 #project-carousel .carousel-inner .card img {
   padding: 5%;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-inner .card img {
+    padding: 0;
+  }
 }
 
 #project-carousel .carousel-inner .card .card-body .card-title {
   font-family: "Poppins", sans-serif;
   color: #061225;
   font-weight: 600;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-inner .card .card-body .card-title {
+    font-size: 2rem;
+  }
 }
 
 #project-carousel .carousel-inner .card .card-body .card-divider {
@@ -763,14 +787,30 @@ li {
   box-shadow: #061225 0 0 2px;
 }
 
+@media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-inner .card .card-body .card-link {
+    padding: 2% 5%;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}
+
 #project-carousel .carousel-inner .card .card-body .card-link:hover {
   background-color: #fafafa;
   color: #061225;
   border: 2px solid #061225;
 }
 
-#project-carousel .carousel-btn i {
+#project-carousel .carousel-control-prev .carousel-btn i,
+#project-carousel .carousel-control-next .carousel-btn i {
   color: rgba(6, 18, 37, 0.8);
   font-size: 1.5rem;
+}
+
+@media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-control-prev,
+  #project-carousel .carousel-control-next {
+    width: 10%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
