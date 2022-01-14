@@ -721,6 +721,13 @@ li {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  #project-carousel {
+    margin: 11%;
+    padding: 10% 5%;
+  }
+}
+
 #project-carousel .carousel-indicators li {
   background-color: #061225;
 }
@@ -741,11 +748,23 @@ li {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  #project-carousel .carousel-inner .card {
+    padding: 4%;
+  }
+}
+
 #project-carousel .carousel-inner .card img {
   padding: 5%;
 }
 
 @media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-inner .card img {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
   #project-carousel .carousel-inner .card img {
     padding: 0;
   }
@@ -763,6 +782,12 @@ li {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  #project-carousel .carousel-inner .card .card-body .card-title {
+    font-size: 2rem;
+  }
+}
+
 #project-carousel .carousel-inner .card .card-body .card-divider {
   /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
   margin: 10px 0;
@@ -774,6 +799,12 @@ li {
   border-radius: 20px;
   -webkit-box-shadow: inset 0 12px 12px -12px rgba(6, 18, 37, 0.8);
   box-shadow: inset 0 12px 12px -12px rgba(6, 18, 37, 0.8);
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  #project-carousel .carousel-inner .card .card-body .card-text {
+    font-size: 1.2rem;
+  }
 }
 
 #project-carousel .carousel-inner .card .card-body .card-link {
@@ -795,6 +826,14 @@ li {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  #project-carousel .carousel-inner .card .card-body .card-link {
+    padding: 2% 5%;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}
+
 #project-carousel .carousel-inner .card .card-body .card-link:hover {
   background-color: #fafafa;
   color: #061225;
@@ -807,7 +846,21 @@ li {
   font-size: 1.5rem;
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  #project-carousel .carousel-control-prev .carousel-btn i,
+  #project-carousel .carousel-control-next .carousel-btn i {
+    font-size: 1.8rem;
+  }
+}
+
 @media (min-width: 700px) and (max-width: 991px) {
+  #project-carousel .carousel-control-prev,
+  #project-carousel .carousel-control-next {
+    width: 10%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
   #project-carousel .carousel-control-prev,
   #project-carousel .carousel-control-next {
     width: 10%;

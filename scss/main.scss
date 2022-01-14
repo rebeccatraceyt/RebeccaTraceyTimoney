@@ -216,6 +216,8 @@
     }
 
     @include largeTablet {
+        margin: 11%;
+        padding: 10% 5%;
     }
 
     @include desktop {
@@ -240,6 +242,7 @@
             }
 
             @include largeTablet {
+                padding: 4%;
             }
 
             @include desktop {
@@ -253,6 +256,7 @@
                 }
 
                 @include largeTablet {
+                    padding: 0;
                 }
 
                 @include desktop {
@@ -270,6 +274,7 @@
                     }
 
                     @include largeTablet {
+                        font-size: 2rem;
                     }
 
                     @include desktop {
@@ -292,6 +297,15 @@
                     -moz-box-shadow: inset 0 12px 12px -12px $body-opaque;
                     box-shadow: inset 0 12px 12px -12px $body-opaque;
                 }
+
+                .card-text {
+                    @include largeTablet {
+                        font-size: 1.2rem;
+                    }
+
+                    @include desktop {
+                    }
+                }
                 .card-link {
                     background-color: $body;
                     color: $white;
@@ -311,6 +325,9 @@
                     }
 
                     @include largeTablet {
+                        padding: 2% 5%;
+                        border-radius: 5px;
+                        font-size: 1rem;
                     }
 
                     @include desktop {
@@ -329,6 +346,13 @@
             i {
                 color: $body-opaque;
                 font-size: 1.5rem;
+
+                @include largeTablet {
+                    font-size: 1.8rem;
+                }
+
+                @include desktop {
+                }
             }
         }
 
@@ -337,6 +361,7 @@
         }
 
         @include largeTablet {
+            width: 10%;
         }
 
         @include desktop {
