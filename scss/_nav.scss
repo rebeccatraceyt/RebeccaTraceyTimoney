@@ -80,11 +80,6 @@ nav {
             right: 60px;
         }
 
-        @include largeTablet {
-            top: 45px;
-            right: 60px;
-        }
-
         @include desktop {
             top: 45px;
             right: 60px;
@@ -109,11 +104,6 @@ nav {
         box-shadow: $white 0 0 5px;
 
         @include tablet {
-            top: 18px;
-            right: 18px;
-        }
-
-        @include largeTablet {
             top: 18px;
             right: 18px;
         }
@@ -149,11 +139,6 @@ nav {
         }
 
         @include tablet {
-            top: 78px;
-            right: 18px;
-        }
-
-        @include largeTablet {
             top: 78px;
             right: 18px;
         }

@@ -14,10 +14,6 @@
         padding: 0 10%;
     }
 
-    @include largeTablet {
-        padding: 0 10%;
-    }
-
     @include desktop {
         padding: 0 5%;
     }
@@ -45,10 +41,6 @@
 
                 @include tablet {
                     font-size: 2.8rem;
-                }
-
-                @include largeTablet {
-                    font-size: 3.2rem;
                 }
 
                 @include desktop {
@@ -83,10 +75,6 @@
                     font-size: 1.8rem;
                 }
 
-                @include largeTablet {
-                    font-size: 1.9rem;
-                }
-
                 @include desktop {
                     font-size: 1.9rem;
                 }
@@ -97,10 +85,6 @@
 
                 @include tablet {
                     font-size: 1.3rem;
-                }
-
-                @include largeTablet {
-                    font-size: 1.4rem;
                 }
 
                 @include desktop {
@@ -119,10 +103,6 @@
                     font-size: 1rem;
                 }
 
-                @include largeTablet {
-                    font-size: 1.2rem;
-                }
-
                 @include desktop {
                     font-size: 1.2rem;
                 }
@@ -138,11 +118,6 @@
 
             @include tablet {
                 max-width: 90%;
-                margin: 0 20% 20% 1%;
-            }
-
-            @include largeTablet {
-                max-width: 80%;
                 margin: 0 20% 20% 1%;
             }
 
@@ -165,12 +140,13 @@
         padding: 0 5%;
     }
 
-    @include largeTablet {
-        padding: 0 10%;
+    @include tabletLandscape {
+        margin-top: 7%;
     }
 
     @include desktop {
-        padding: 0 5%;
+        padding: 0;
+        margin: 5% 5% 2% 5%;
     }
 
 
@@ -182,10 +158,6 @@
     
             @include tablet {
                 font-size: 2.8rem;
-            }
-    
-            @include largeTablet {
-                font-size: 3.2rem;
             }
     
             @include desktop {
@@ -201,6 +173,7 @@
 #project-carousel {
 
     padding: 10% 5%;
+    margin: 4% 2% 1%;
     background-color: $white;
 
     -webkit-border-radius: 20px;
@@ -213,14 +186,19 @@
 
     @include tablet {
         margin: 10%;
+        height: 65%;
     }
 
-    @include largeTablet {
-        margin: 11%;
-        padding: 10% 5%;
+    @include tabletLandscape {
+        margin: 5% 8%;
+        padding: 5%;
     }
 
     @include desktop {
+        margin: 0 auto 10%;
+        padding: 2%;
+        width: 75%;
+        height: 70%;
     }
 
     .carousel-indicators {
@@ -233,7 +211,7 @@
         width: 100%;
         height: 100%;
         
-        .card {
+        .project-card {
             padding: 5%;
             border: none;
 
@@ -241,47 +219,47 @@
                 padding: 4%;
             }
 
-            @include largeTablet {
-                padding: 4%;
+            @include tabletLandscape {
+                padding: 4% 4% 0;
             }
 
             @include desktop {
+                padding: 4%;
+                height: 100%;
+                width: 100%;
             }
 
-            img {
-                padding: 5%;
-
-                @include tablet {
-                    padding: 0;
-                }
-
-                @include largeTablet {
-                    padding: 0;
-                }
-
-                @include desktop {
+            .project-header {
+                img {
+    
+                    @include tablet {
+                        padding: 0;
+                    }
+    
+                    @include desktop {
+                        padding: 0;
+                    }
                 }
             }
 
-            .card-body {
-                .card-title {
+
+            .project-body {
+
+                .project-title {
                     font-family: $title-font;
                     color: $body;
                     font-weight: 600;
-
+    
                     @include tablet {
                         font-size: 2rem;
                     }
-
-                    @include largeTablet {
+    
+                    @include desktop {
                         font-size: 2rem;
                     }
-
-                    @include desktop {
-                    }
                 }
-
-                .card-divider {
+    
+                .project-divider {
                     /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
                     margin: 10px 0;
                     border: 0;
@@ -296,44 +274,30 @@
                     -webkit-box-shadow: inset 0 12px 12px -12px $body-opaque;
                     -moz-box-shadow: inset 0 12px 12px -12px $body-opaque;
                     box-shadow: inset 0 12px 12px -12px $body-opaque;
+
+                    @include desktop {
+                        margin: 10px 0 15px;
+                    }
                 }
 
-                .card-text {
-                    @include largeTablet {
+                .project-text {
+                    @include desktop {
                         font-size: 1.2rem;
-                    }
-
-                    @include desktop {
+                        line-height: 35px;
                     }
                 }
-                .card-link {
-                    background-color: $body;
-                    color: $white;
-                    padding: 3% 7%;
-
-                    border-radius: 2px;
-                    font-size: .9rem;
+                .project-link {
+                    color: $body;
+                    font-size: 1.1rem;
                     font-family: $title-font;
-                    -webkit-box-shadow: $body 0 0 2px;
-                    -moz-box-shadow: $body 0 0 2px;
-                    box-shadow: $body 0 0 2px;
-
-                    @include tablet {
-                        padding: 2% 5%;
-                        border-radius: 5px;
-                        font-size: 1rem;
-                    }
-
-                    @include largeTablet {
-                        padding: 2% 5%;
-                        border-radius: 5px;
-                        font-size: 1rem;
-                    }
+                    font-weight: 700;
 
                     @include desktop {
+                        font-size: 1.3rem;
+                        line-height: 35px;
                     }
                 }
-                .card-link:hover {
+                .project-link:hover {
                     @include btnHover;
                 }
             }
@@ -342,16 +306,15 @@
 
     .carousel-control-prev,
     .carousel-control-next {
+
+        width: 10%;
         .carousel-btn{
             i {
                 color: $body-opaque;
                 font-size: 1.5rem;
 
-                @include largeTablet {
-                    font-size: 1.8rem;
-                }
-
                 @include desktop {
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -360,11 +323,12 @@
             width: 10%;
         }
 
-        @include largeTablet {
-            width: 10%;
+        @include tabletLandscape {
+            width: 7%;
         }
 
         @include desktop {
+            width: 3%;
         }
     }
 }
