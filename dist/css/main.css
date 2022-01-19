@@ -31,11 +31,16 @@
 html {
   background-color: #061225;
   scroll-behavior: smooth;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 section {
+  height: 100vh;
   width: 100vw;
-  min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 body {
@@ -101,7 +106,7 @@ li {
 /* ----------------------- *\ 
            Navbar
 \* ----------------------- */
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   nav {
     position: fixed;
     width: 100%;
@@ -180,21 +185,14 @@ li {
           transform: rotate(-45deg);
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #mobile-nav #nav-btn {
-    top: 45px;
-    right: 60px;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
@@ -219,21 +217,14 @@ li {
           box-shadow: #fafafa 0 0 5px;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #mobile-nav #nav-bg {
     top: 18px;
     right: 18px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #mobile-nav #nav-bg {
-    top: 18px;
-    right: 18px;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #mobile-nav #nav-bg {
     display: none;
   }
@@ -266,14 +257,7 @@ li {
   font-weight: 100;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
-  #mobile-nav #nav-menu {
-    top: 78px;
-    right: 18px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #mobile-nav #nav-menu {
     top: 78px;
     right: 18px;
@@ -452,19 +436,13 @@ li {
   color: #746E90;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home {
     padding: 0 10%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #home {
-    padding: 0 10%;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home {
     padding: 0 5%;
   }
@@ -497,19 +475,13 @@ li {
           animation: text 2s steps(29, end) 0.5s 1 normal both, cursor 600ms steps(29, end) infinite;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h1 {
     font-size: 2.8rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #home #home-content #home-text h1 {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h1 {
     font-size: 3.2rem;
   }
@@ -555,19 +527,13 @@ li {
   font-size: 1.2rem;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h5 {
     font-size: 1.8rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #home #home-content #home-text h5 {
-    font-size: 1.9rem;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h5 {
     font-size: 1.9rem;
   }
@@ -577,19 +543,13 @@ li {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text p {
     font-size: 1.3rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #home #home-content #home-text p {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text p {
     font-size: 1.4rem;
   }
@@ -611,19 +571,13 @@ li {
           box-shadow: #061225 0 0 5px;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text .btns {
     font-size: 1rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #home #home-content #home-text .btns {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text .btns {
     font-size: 1.2rem;
   }
@@ -639,21 +593,14 @@ li {
   border: 2px solid #061225;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text {
     max-width: 90%;
     margin: 0 20% 20% 1%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #home #home-content #home-text {
-    max-width: 80%;
-    margin: 0 20% 20% 1%;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text {
     max-width: 60%;
     margin: 0 15% 10% 1%;
@@ -665,21 +612,22 @@ li {
   margin-top: 15%;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top {
     padding: 0 5%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top {
-    padding: 0 10%;
+    margin-top: 7%;
   }
 }
 
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top {
-    padding: 0 5%;
+    padding: 0;
+    margin: 5% 5% 2% 5%;
   }
 }
 
@@ -689,19 +637,13 @@ li {
   letter-spacing: 2px;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top .page-title h1 {
     font-size: 2.8rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  .page-top .page-title h1 {
-    font-size: 3.2rem;
-  }
-}
-
-@media (min-width: 1025px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top .page-title h1 {
     font-size: 3.2rem;
   }
@@ -709,22 +651,33 @@ li {
 
 #project-carousel {
   padding: 10% 5%;
+  margin: 4% 2% 1%;
   background-color: #fafafa;
   border-radius: 20px;
   -webkit-box-shadow: rgba(6, 18, 37, 0.8) 0px 0 10px;
   box-shadow: rgba(6, 18, 37, 0.8) 0 0 10px;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #project-carousel {
     margin: 10%;
+    height: 65%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #project-carousel {
-    margin: 11%;
-    padding: 10% 5%;
+    margin: 5% 8%;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel {
+    margin: 0 auto 10%;
+    padding: 2%;
+    width: 75%;
+    height: 70%;
   }
 }
 
@@ -737,58 +690,62 @@ li {
   height: 100%;
 }
 
-#project-carousel .carousel-inner .card {
+#project-carousel .carousel-inner .project-card {
   padding: 5%;
   border: none;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
-  #project-carousel .carousel-inner .card {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card {
     padding: 4%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #project-carousel .carousel-inner .card {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card {
+    padding: 4% 4% 0;
+  }
+}
+
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card {
     padding: 4%;
+    height: 100%;
+    width: 100%;
   }
 }
 
-#project-carousel .carousel-inner .card img {
-  padding: 5%;
-}
-
-@media (min-width: 700px) and (max-width: 991px) {
-  #project-carousel .carousel-inner .card img {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-header img {
     padding: 0;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #project-carousel .carousel-inner .card img {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-header img {
     padding: 0;
   }
 }
 
-#project-carousel .carousel-inner .card .card-body .card-title {
+#project-carousel .carousel-inner .project-card .project-body .project-title {
   font-family: "Poppins", sans-serif;
   color: #061225;
   font-weight: 600;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
-  #project-carousel .carousel-inner .card .card-body .card-title {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 2rem;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #project-carousel .carousel-inner .card .card-body .card-title {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 2rem;
   }
 }
 
-#project-carousel .carousel-inner .card .card-body .card-divider {
+#project-carousel .carousel-inner .project-card .project-body .project-divider {
   /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
   margin: 10px 0;
   border: 0;
@@ -801,43 +758,42 @@ li {
   box-shadow: inset 0 12px 12px -12px rgba(6, 18, 37, 0.8);
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #project-carousel .carousel-inner .card .card-body .card-text {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-body .project-divider {
+    margin: 10px 0 15px;
+  }
+}
+
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-body .project-text {
     font-size: 1.2rem;
+    line-height: 35px;
   }
 }
 
-#project-carousel .carousel-inner .card .card-body .card-link {
-  background-color: #061225;
-  color: #fafafa;
-  padding: 3% 7%;
-  border-radius: 2px;
-  font-size: .9rem;
+#project-carousel .carousel-inner .project-card .project-body .project-link {
+  color: #061225;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
-  -webkit-box-shadow: #061225 0 0 2px;
-  box-shadow: #061225 0 0 2px;
+  font-weight: 700;
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
-  #project-carousel .carousel-inner .card .card-body .card-link {
-    padding: 2% 5%;
-    border-radius: 5px;
-    font-size: 1rem;
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-inner .project-card .project-body .project-link {
+    font-size: 1.3rem;
+    line-height: 35px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
-  #project-carousel .carousel-inner .card .card-body .card-link {
-    padding: 2% 5%;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-}
-
-#project-carousel .carousel-inner .card .card-body .card-link:hover {
+#project-carousel .carousel-inner .project-card .project-body .project-link:hover {
   background-color: #fafafa;
   color: #061225;
   border: 2px solid #061225;
+}
+
+#project-carousel .carousel-control-prev,
+#project-carousel .carousel-control-next {
+  width: 10%;
 }
 
 #project-carousel .carousel-control-prev .carousel-btn i,
@@ -846,24 +802,31 @@ li {
   font-size: 1.5rem;
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #project-carousel .carousel-control-prev .carousel-btn i,
   #project-carousel .carousel-control-next .carousel-btn i {
     font-size: 1.8rem;
   }
 }
 
-@media (min-width: 700px) and (max-width: 991px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   #project-carousel .carousel-control-prev,
   #project-carousel .carousel-control-next {
     width: 10%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #project-carousel .carousel-control-prev,
   #project-carousel .carousel-control-next {
-    width: 10%;
+    width: 7%;
+  }
+}
+
+@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+  #project-carousel .carousel-control-prev,
+  #project-carousel .carousel-control-next {
+    width: 3%;
   }
 }
 /*# sourceMappingURL=main.css.map */
