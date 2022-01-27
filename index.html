@@ -91,131 +91,133 @@
             </div>
         </nav>
 
-        <!-- Home Content -->
-        <section id="home" class="container-fluid" aria-label="Intro Section">
-            <div id="home-content" class="row align-items-end">
-                <div class="col-12" id="home-text">
-                    <h1>Hi, I'm Rebecca!</h1>
-                    <h5>Software Developer and Tutor</h5>
-                    <p>Driven by curiosity and a passion for creative solutions, I love to challenge my skills with each project I undertake.</p> <p>A firm believer in the <strong><a href="http://lawsofsimplicity.com/" target="_blank">Law of Simplicity</a></strong>, I create simple and intuitive designs through clean code, enhancing the online user experience, one line of code at a time.</p>
-                    <a href="#projects" aria-label="Projects Section" class="btns" id="home-btn">
-                        View Projects
+        <main>
+            <!-- Home Content -->
+            <section id="home" class="container-fluid" aria-label="Intro Section">
+                <div id="home-content" class="row align-items-end">
+                    <div class="col-12" id="home-text">
+                        <h1>Hi, I'm Rebecca!</h1>
+                        <h5>Software Developer and Tutor</h5>
+                        <p>Driven by curiosity and a passion for creative solutions, I love to challenge my skills with each project I undertake.</p> <p>A firm believer in the <strong><a href="http://lawsofsimplicity.com/" target="_blank">Law of Simplicity</a></strong>, I create simple and intuitive designs through clean code, enhancing the online user experience, one line of code at a time.</p>
+                        <a href="#projects" aria-label="Projects Section" class="btns" id="home-btn">
+                            View Projects
+                        </a>
+                        <a href="dist/imgs/Rebecca_TraceyTimoney.pdf" aria-label="Download CV" download="CV-Rebecca_TraceyTimoney" class="btns">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Projects Content -->
+            <section id="projects" class="container-fluid" aria-label="Projects Section">
+                <div class="page-top row">
+                    <div class="col-12 page-title">
+                        <h1>Project Work</h1>
+                    </div>
+                </div>
+                <div id="project-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#project-carousel" data-slide-to="1"></li>
+                        <li data-target="#project-carousel" data-slide-to="2"></li>
+                        <li data-target="#project-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active h-100 container-fluid">
+                            <div class="project-card row">
+                                <div class="project-header col-12 col-lg-7 d-flex align-items-center">
+                                    <img src="dist/imgs/kryan2.png" class="w-100" alt="Multi Screen Render of Kryan Live Site">
+                                </div>
+                                <div class="project-body col-12 col-lg-5">
+                                    <h5 class="project-title">Kryan Live</h5>
+                                    <hr class="project-divider">
+                                    <p class="project-text">This comprehensive website was designed for the artist known as Kryan to create an online presence allowing members of the media, as well as new and current fans, to find out relevant information and to get to know Kryan.</p>
+                                    <a href="https://rebeccatraceyt.github.io/KryanLive/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
+                                    <a href="https://github.com/rebeccatraceyt/KryanLive" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100 container-fluid">
+                            <div class="project-card row">
+                                <div class="project-header col-12 col-lg-7 d-flex align-items-center">
+                                    <img src="dist/imgs/blank2.png" class="w-100" alt="Multi Screen Render of What The Blank Live Site">
+                                </div>
+                                <div class="project-body col-12 col-lg-5">
+                                    <h5 class="project-title">Blank!</h5>
+                                    <hr class="project-divider">
+                                    <p class="project-text">A web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favourite music genre, using a fun and intuitive user interface.</p>
+                                    <a href="https://rebeccatraceyt.github.io/WhatTheBlank/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
+                                    <a href="https://github.com/rebeccatraceyt/WhatTheBlank" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100 container-fluid">
+                            <div class="project-card row">
+                                <div class="project-header col-12 col-lg-7 d-flex align-items-center">
+                                    <img src="dist/imgs/bake2.png" class="w-100" alt="Multi Screen Render of Bake It Til You Make Live Site">
+                                </div>
+                                <div class="project-body col-12 col-lg-5">
+                                    <h5 class="project-title">Bake It Til You Make It</h5>
+                                    <hr class="project-divider">
+                                    <p class="project-text">A community-based web application for those who love the art of baking, where users can search and share their favourite creations. Inspired by the old-school baking book (full to the brim with loose paper and haphazard notes)!</p>
+                                    <a href="https://bake-it-til-you-make-it.herokuapp.com/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
+                                    <a href="https://github.com/rebeccatraceyt/bake-it-til-you-make-it" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100 container-fluid">
+                            <div class="project-card row">
+                                <div class="project-header col-12 col-lg-7 d-flex align-items-center">
+                                    <img src="dist/imgs/delphin2.png" class="w-100" alt="Multi Screen Render of Delphin Lifesaving Club Live Site">
+                                </div>
+                                <div class="project-body col-12 col-lg-5">
+                                    <h5 class="project-title">Delphin Lifesaving Club</h5>
+                                    <hr class="project-divider">
+                                    <p class="project-text">The Delphin Lifesaving Club online shop provides a virtual shopping environment for club members (future and current) to browse and purchase Delphin products, including class credits and club apparel, and provide club information.</p>
+                                    <a href="https://delphin-lifesavingclub.herokuapp.com/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
+                                    <a href="https://github.com/rebeccatraceyt/delphin_lifesavingclub" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+                        <span class="carousel-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                    <a href="dist/imgs/Rebecca_TraceyTimoney.pdf" aria-label="Download CV" download="CV-Rebecca_TraceyTimoney" class="btns">
-                        Download CV
+                    <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+                        <span class="carousel-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Projects Content -->
-        <section id="projects" class="container-fluid" aria-label="Projects Section">
-            <div class="page-top row">
-                <div class="col-12 page-title">
-                    <h1>Project Work</h1>
-                </div>
-            </div>
-            <div id="project-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#project-carousel" data-slide-to="1"></li>
-                    <li data-target="#project-carousel" data-slide-to="2"></li>
-                    <li data-target="#project-carousel" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active h-100 container-fluid">
-                        <div class="project-card row">
-                            <div class="project-header col-12 col-lg-7 d-flex align-items-center">
-                                <img src="dist/imgs/kryan2.png" class="w-100" alt="Multi Screen Render of Kryan Live Site">
-                            </div>
-                            <div class="project-body col-12 col-lg-5">
-                                <h5 class="project-title">Kryan Live</h5>
-                                <hr class="project-divider">
-                                <p class="project-text">This comprehensive website was designed for the artist known as Kryan to create an online presence allowing members of the media, as well as new and current fans, to find out relevant information and to get to know Kryan.</p>
-                                <a href="https://rebeccatraceyt.github.io/KryanLive/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
-                                <a href="https://github.com/rebeccatraceyt/KryanLive" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 container-fluid">
-                        <div class="project-card row">
-                            <div class="project-header col-12 col-lg-7 d-flex align-items-center">
-                                <img src="dist/imgs/blank2.png" class="w-100" alt="Multi Screen Render of What The Blank Live Site">
-                            </div>
-                            <div class="project-body col-12 col-lg-5">
-                                <h5 class="project-title">Blank!</h5>
-                                <hr class="project-divider">
-                                <p class="project-text">A web-based interactive fill-in-the-blank game, with a musical twist. With a wide variety of music categories to choose from, the user can test their memory in their favourite music genre, using a fun and intuitive user interface.</p>
-                                <a href="https://rebeccatraceyt.github.io/WhatTheBlank/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
-                                <a href="https://github.com/rebeccatraceyt/WhatTheBlank" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 container-fluid">
-                        <div class="project-card row">
-                            <div class="project-header col-12 col-lg-7 d-flex align-items-center">
-                                <img src="dist/imgs/bake2.png" class="w-100" alt="Multi Screen Render of Bake It Til You Make Live Site">
-                            </div>
-                            <div class="project-body col-12 col-lg-5">
-                                <h5 class="project-title">Bake It Til You Make It</h5>
-                                <hr class="project-divider">
-                                <p class="project-text">A community-based web application for those who love the art of baking, where users can search and share their favourite creations. Inspired by the old-school baking book (full to the brim with loose paper and haphazard notes)!</p>
-                                <a href="https://bake-it-til-you-make-it.herokuapp.com/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
-                                <a href="https://github.com/rebeccatraceyt/bake-it-til-you-make-it" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item h-100 container-fluid">
-                        <div class="project-card row">
-                            <div class="project-header col-12 col-lg-7 d-flex align-items-center">
-                                <img src="dist/imgs/delphin2.png" class="w-100" alt="Multi Screen Render of Delphin Lifesaving Club Live Site">
-                            </div>
-                            <div class="project-body col-12 col-lg-5">
-                                <h5 class="project-title">Delphin Lifesaving Club</h5>
-                                <hr class="project-divider">
-                                <p class="project-text">The Delphin Lifesaving Club online shop provides a virtual shopping environment for club members (future and current) to browse and purchase Delphin products, including class credits and club apparel, and provide club information.</p>
-                                <a href="https://delphin-lifesavingclub.herokuapp.com/" class="project-link">Live Site <i class="fas fa-external-link-alt"></i></a><br>
-                                <a href="https://github.com/rebeccatraceyt/delphin_lifesavingclub" class="project-link">GitHub Repo <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+            </section>
+    
+            <!-- Skills Content -->
+            <section id="skills" class="container-fluid" aria-label="Skills Section">
+                <div class="page-top row">
+                    <div class="col-12 page-title">
+                        <h1>Skills</h1>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
-                    <span class="carousel-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
-                    <span class="carousel-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Skills Content -->
-        <section id="skills" class="container-fluid" aria-label="Skills Section">
-            <div class="page-top row">
-                <div class="col-12 page-title">
-                    <h1>Skills</h1>
+                <div class="row" id="skills-sec">
+                    <div class="col-12 p-0">
+                        <h5 class="skills-title">LANGUAGES</h5>
+                    </div>
+                    <div class="col-3 col-md-1 skills-icon">
+                        <img src="dist/imgs/icons/html.svg" title="HTML" alt="HTML Logo">
+                    </div>
+                    <div class="col-3 col-md-1 skills-icon">
+                        <img src="dist/imgs/icons/css3.svg" title="CSS3" alt="CSS3 Logo">
+                    </div>
+                    <div class="col-3 col-md-1 skills-icon">
+                        <img src="dist/imgs/icons/javascript.svg" title="JavaScript" alt="JavaScript Logo">
+                    </div>
+                    <div class="col-3 col-md-1 skills-icon">
+                        <img src="dist/imgs/icons/python.svg" title="Python" alt="Python Logo">
+                    </div>
                 </div>
-            </div>
-            <div class="row" id="skills-sec">
-                <div class="col-12 p-0">
-                    <h5 class="skills-title">LANGUAGES</h5>
-                </div>
-                <div class="col-3 col-md-1 skills-icon">
-                    <img src="dist/imgs/icons/html.svg" title="HTML" alt="HTML Logo">
-                </div>
-                <div class="col-3 col-md-1 skills-icon">
-                    <img src="dist/imgs/icons/css3.svg" title="CSS3" alt="CSS3 Logo">
-                </div>
-                <div class="col-3 col-md-1 skills-icon">
-                    <img src="dist/imgs/icons/javascript.svg" title="JavaScript" alt="JavaScript Logo">
-                </div>
-                <div class="col-3 col-md-1 skills-icon">
-                    <img src="dist/imgs/icons/python.svg" title="Python" alt="Python Logo">
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
         
         <!-- Footer Content -->
         <footer>
