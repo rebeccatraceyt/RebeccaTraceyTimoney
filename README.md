@@ -5,7 +5,7 @@
 
 <h3>
 <strong>Welcome to my <a href="">Portfolio</a>!</strong> <br />
-Hi, I'm Rebeca, a Software Developer and Tutor based in Dublin, Ireland. <br>
+Hi, I'm Rebecca, a Software Developer and Tutor based in Dublin, Ireland. <br>
 </h3>
 <p>This fully responsive website was designed by, and for, me. The focus of the site is to create an online presence as a developer, allowing others to find out more about me, including previous projects, and how to get in contact for future ones. 
 </p>
@@ -98,7 +98,7 @@ The information architecture was organized in a **hierarchial tree structure** i
 </p>
 
 #### Skeleton 
-High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio "Link to Portfolio Workspace") with providing a positive user experience in mind:
+High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=0%3A1 "Link to Portfolio Workspace") with providing a positive user experience in mind:
 
 <div align="center">
 <img src="markdown-files/wireframe.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
@@ -110,12 +110,13 @@ High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.fi
 
 The chosen colour scheme is reflective of the developers style of creativity. The colours are from the developer's colour favourites, and were selected on their aesthetic appeal. The following colours were selected:
 
-![#438796](https://via.placeholder.com/15/438796/000000?text=+) `#438796` <br>
-![#629CA7](https://via.placeholder.com/15/629CA7/000000?text=+) `#629CA7` <br>
-![#5A6080](https://via.placeholder.com/15/5A6080/000000?text=+) `#5A6080` <br>
-![#716387](https://via.placeholder.com/15/716387/000000?text=+) `#716387` <br>
-![#746E90](https://via.placeholder.com/15/746E90/000000?text=+) `#746E90` <br>
-![#061225](https://via.placeholder.com/15/061225/000000?text=+) `#061225`
+![#FEFEFC](https://via.placeholder.com/15/FEFEFC/000000?text=+) `#FEFEFC`<br>
+![#E7E8B0](https://via.placeholder.com/15/E7E8B0/000000?text=+) `#E7E8B0` <br>
+![#A5A1BF](https://via.placeholder.com/15/A5A1BF/000000?text=+) `#A5A1BF` <br>
+![#ED71A4](https://via.placeholder.com/15/ED71A4/000000?text=+) `#ED71A4` <br>
+![#C6536E](https://via.placeholder.com/15/C6536E/000000?text=+) `#C6536E` <br>
+![#583C62](https://via.placeholder.com/15/583C62/000000?text=+) `#583C62` <br>
+![#392C3F](https://via.placeholder.com/15/392C3F/000000?text=+) `#392C3F` 
 
 **Typography**
 
