@@ -8,6 +8,7 @@
 /* ----------------------- *\ 
      Mixin Declaration
 \* ----------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -32,12 +33,12 @@
 }
 
 html {
-  background-color: #061225;
+  background-color: #392C3F;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #061225;
+  color: #FEFEFC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,50 +46,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(-30deg, #438796, #716387);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 10s ease-in-out infinite;
-          animation: gradient 10s ease-in-out infinite;
-}
-
-@-webkit-keyframes gradient {
-  /* ref: https://codepen.io/hylobates-lar/pen/qBbQeON */
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  /* ref: https://codepen.io/hylobates-lar/pen/qBbQeON */
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-main {
-  height: 100vh;
-  overflow: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 section {
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: start;
 }
 
 a, a:hover, a:focus, a:active {
@@ -108,7 +70,6 @@ li {
 
 .page-top {
   padding: 5%;
-  margin-top: 15%;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -117,16 +78,10 @@ li {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .page-top {
-    margin-top: 7%;
-  }
-}
-
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top {
     padding: 0;
-    margin: 5% 5% 2% 5%;
+    margin: 0% 5% 2% 5%;
   }
 }
 
@@ -134,17 +89,27 @@ li {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   letter-spacing: 2px;
+  color: #392C3F;
+  margin-top: 10%;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top .page-title h1 {
     font-size: 2.8rem;
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .page-top .page-title h1 {
+    margin-top: 10%;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   .page-top .page-title h1 {
     font-size: 3.2rem;
+    margin-top: 5%;
   }
 }
 
@@ -153,6 +118,12 @@ li {
 \* ----------------------- */
 /* ----------------------- *\ 
            Navbar
+\* ----------------------- */
+/* ----------------------- *\ 
+     Variable Declaration
+\* ----------------------- */
+/* ----------------------- *\ 
+     Mixin Declaration
 \* ----------------------- */
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
   nav {
@@ -183,7 +154,7 @@ li {
 }
 
 #mobile-nav #nav-btn span {
-  background-color: #fafafa;
+  background-color: #FEFEFC;
   border-radius: 2px;
   height: 3px;
   width: 100%;
@@ -194,7 +165,7 @@ li {
 
 #mobile-nav #nav-btn span::after, #mobile-nav #nav-btn span::before {
   content: '';
-  background-color: #fafafa;
+  background-color: #FEFEFC;
   border-radius: 2px;
   height: 3px;
   width: 100%;
@@ -219,7 +190,7 @@ li {
 
 #mobile-nav #nav-btn.animate > span::after,
 #mobile-nav #nav-btn.animate > span::before {
-  background-color: #fafafa;
+  background-color: #FEFEFC;
   top: 1px;
 }
 
@@ -248,12 +219,12 @@ li {
   #mobile-nav #nav-btn span,
   #mobile-nav #nav-btn > span::after,
   #mobile-nav #nav-btn > span::before {
-    background-color: #061225;
+    background-color: #C6536E;
   }
 }
 
 #mobile-nav #nav-bg {
-  background: #061225;
+  background: #C6536E;
   position: fixed;
   border-radius: 2px;
   width: 82px;
@@ -261,8 +232,8 @@ li {
   right: 3px;
   padding: 50px 10px 10px 10px;
   z-index: 100;
-  -webkit-box-shadow: #fafafa 0 0 5px;
-          box-shadow: #fafafa 0 0 5px;
+  -webkit-box-shadow: #FEFEFC 0 0 5px;
+          box-shadow: #FEFEFC 0 0 5px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -279,8 +250,8 @@ li {
 }
 
 #mobile-nav #nav-menu {
-  background-color: #061225;
-  color: #fafafa;
+  background-color: #C6536E;
+  color: #FEFEFC;
   position: fixed;
   display: none;
   border-radius: 2px;
@@ -288,8 +259,8 @@ li {
   right: 3px;
   padding: 10px 10px 10px 10px;
   z-index: 101;
-  -webkit-box-shadow: #fafafa 0 0 5px;
-          box-shadow: #fafafa 0 0 5px;
+  -webkit-box-shadow: #FEFEFC 0 0 5px;
+          box-shadow: #FEFEFC 0 0 5px;
 }
 
 #mobile-nav #nav-menu #nav-list > ul li {
@@ -315,7 +286,7 @@ li {
 #lg-nav {
   float: right;
   margin: 10px;
-  color: #061225;
+  color: #C6536E;
   text-align: center;
 }
 
@@ -336,7 +307,7 @@ li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #061225;
+  background-color: #C6536E;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -374,13 +345,15 @@ li {
 #socials span {
   position: absolute;
   padding: 15px 10px;
-  background: #061225;
+  background: #C6536E;
+  color: #FEFEFC;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  -webkit-box-shadow: #fafafa 0 0 5px;
-          box-shadow: #fafafa 0 0 5px;
+  border: 1px solid #C6536E;
+  -webkit-box-shadow: #746E90 0px 0 5px;
+  box-shadow: #746E90 0 0 5px;
 }
 
 #socials span.hidden {
@@ -411,17 +384,9 @@ li {
           transform: rotate(270deg) translate(90px) rotate(90deg);
 }
 
-#socials span > a > i {
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-#socials span > a > i:hover {
-  color: #746E90;
-}
-
-#socials #socials-btn:hover {
-  color: #746E90;
+#socials span:hover {
+  background: #746E90;
+  border: 1px solid #746E90;
 }
 
 /* ----------------------- *\ 
@@ -430,7 +395,7 @@ li {
 /* ref: https://codepen.io/mvaneijgen/pen/yMpgpE */
 #footer-scroll {
   height: 100px;
-  background-color: #061225;
+  background-color: #C6536E;
 }
 
 #footer-scroll #footer-ruler {
@@ -441,15 +406,15 @@ li {
   display: block;
   width: 100%;
   height: 12px;
-  -webkit-box-shadow: inset 0 12px 12px -12px #fafafa;
-          box-shadow: inset 0 12px 12px -12px #fafafa;
+  -webkit-box-shadow: #746E90 0px 0 5px;
+  box-shadow: #746E90 0 0 5px;
 }
 
 #footer-scroll .footer-content {
   margin: 10px auto;
   width: 100%;
   text-align: center;
-  color: #fafafa;
+  color: #FEFEFC;
   font-size: 1.1rem;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
@@ -472,6 +437,7 @@ li {
 #footer-scroll .footer-content > a > i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #FEFEFC;
 }
 
 #footer-scroll .footer-content.show {
@@ -482,6 +448,10 @@ li {
 
 #footer-scroll .footer-content > a > i:hover {
   color: #746E90;
+}
+
+#home {
+  background-color: #392C3F;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -511,7 +481,8 @@ li {
 #home #home-content #home-text h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  border-right: solid 3px #fafafa;
+  color: #E7E8B0;
+  border-right: solid 3px #FEFEFC;
   letter-spacing: 2px;
   padding-right: 5px;
   white-space: nowrap;
@@ -555,7 +526,7 @@ li {
 
 @-webkit-keyframes cursor {
   from {
-    border-right-color: #fafafa;
+    border-right-color: #FEFEFC;
   }
   to {
     border-right-color: transparent;
@@ -564,7 +535,7 @@ li {
 
 @keyframes cursor {
   from {
-    border-right-color: #fafafa;
+    border-right-color: #FEFEFC;
   }
   to {
     border-right-color: transparent;
@@ -573,6 +544,7 @@ li {
 
 #home #home-content #home-text h5 {
   font-size: 1.2rem;
+  color: #C6536E;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -603,20 +575,25 @@ li {
   }
 }
 
-#home #home-content #home-text p a:hover, #home #home-content #home-text p a:focus, #home #home-content #home-text p a:active {
-  color: #fafafa;
+#home #home-content #home-text p a:hover, #home #home-content #home-text p a:focus {
+  color: #C6536E;
+}
+
+#home #home-content #home-text p a:active {
+  color: #FEFEFC;
 }
 
 #home #home-content #home-text .btns {
-  border-radius: 2px;
-  background-color: #061225;
+  border-radius: 5px;
+  background-color: #746E90;
   font-size: .9rem;
   font-family: "Poppins", sans-serif;
-  color: #fafafa;
+  color: #FEFEFC;
   font-weight: 700;
   padding: 15px 20px;
-  -webkit-box-shadow: #061225 0 0 5px;
-          box-shadow: #061225 0 0 5px;
+  border: 1px solid #392C3F;
+  -webkit-box-shadow: #746E90 0px 0 5px;
+  box-shadow: #746E90 0 0 5px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -636,9 +613,9 @@ li {
 }
 
 #home #home-content #home-text .btns:hover {
-  background-color: #fafafa;
-  color: #061225;
-  border: 2px solid #061225;
+  background-color: #FEFEFC;
+  color: #392C3F;
+  border: 2px solid #392C3F;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -655,31 +632,35 @@ li {
   }
 }
 
-#project-carousel {
+#projects {
+  background-color: #E7E8B0;
+}
+
+#projects #project-carousel {
   padding: 10% 5%;
-  margin: 10% 2% 1%;
-  background-color: #fafafa;
+  margin: 2% 2% 1%;
+  background-color: #C6536E;
   border-radius: 20px;
-  -webkit-box-shadow: rgba(6, 18, 37, 0.8) 0px 0 10px;
-  box-shadow: rgba(6, 18, 37, 0.8) 0 0 10px;
+  -webkit-box-shadow: #392C3F 0px 0 10px;
+  box-shadow: #392C3F 0 0 10px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel {
-    margin: 10%;
+  #projects #project-carousel {
+    margin: 8% 10%;
     height: 65%;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel {
-    margin: 5% 8%;
+  #projects #project-carousel {
+    margin: 2% 10%;
     padding: 5%;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel {
+  #projects #project-carousel {
     margin: 0 auto 10%;
     padding: 2%;
     width: 75%;
@@ -687,34 +668,34 @@ li {
   }
 }
 
-#project-carousel .carousel-indicators li {
-  background-color: #061225;
+#projects #project-carousel .carousel-indicators li {
+  background-color: #FEFEFC;
 }
 
-#project-carousel .carousel-inner {
+#projects #project-carousel .carousel-inner {
   width: 100%;
   height: 100%;
 }
 
-#project-carousel .carousel-inner .project-card {
-  padding: 5%;
+#projects #project-carousel .carousel-inner .project-card {
+  padding: 4%;
   border: none;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card {
+  #projects #project-carousel .carousel-inner .project-card {
     padding: 4%;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card {
+  #projects #project-carousel .carousel-inner .project-card {
     padding: 4% 4% 0;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card {
+  #projects #project-carousel .carousel-inner .project-card {
     padding: 4%;
     height: 100%;
     width: 100%;
@@ -722,36 +703,43 @@ li {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-header img {
+  #projects #project-carousel .carousel-inner .project-card .project-header img {
     padding: 0;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-header img {
+  #projects #project-carousel .carousel-inner .project-card .project-header img {
     padding: 0;
   }
 }
 
-#project-carousel .carousel-inner .project-card .project-body .project-title {
+#projects #project-carousel .carousel-inner .project-card .project-body .project-title {
   font-family: "Poppins", sans-serif;
-  color: #061225;
+  color: #392C3F;
   font-weight: 600;
+  margin-top: 10px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-body .project-title {
+  #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-body .project-title {
+  #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 2rem;
   }
 }
 
-#project-carousel .carousel-inner .project-card .project-body .project-divider {
+#projects #project-carousel .carousel-inner .project-card .project-body .project-divider {
   /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
   margin: 10px 0;
   border: 0;
@@ -760,78 +748,77 @@ li {
   height: 2px;
   border-radius: 25%;
   border-radius: 20px;
-  -webkit-box-shadow: inset 0 12px 12px -12px rgba(6, 18, 37, 0.8);
-  box-shadow: inset 0 12px 12px -12px rgba(6, 18, 37, 0.8);
+  -webkit-box-shadow: inset 0 12px 12px -12px #392C3F;
+  box-shadow: inset 0 12px 12px -12px #392C3F;
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-body .project-divider {
+  #projects #project-carousel .carousel-inner .project-card .project-body .project-divider {
     margin: 10px 0 15px;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-body .project-text {
+  #projects #project-carousel .carousel-inner .project-card .project-body .project-text {
     font-size: 1.2rem;
     line-height: 35px;
   }
 }
 
-#project-carousel .carousel-inner .project-card .project-body .project-link {
-  color: #061225;
+#projects #project-carousel .carousel-inner .project-card .project-body .project-link {
+  color: #FEFEFC;
   font-size: 1.1rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-inner .project-card .project-body .project-link {
+  #projects #project-carousel .carousel-inner .project-card .project-body .project-link {
     font-size: 1.3rem;
     line-height: 35px;
   }
 }
 
-#project-carousel .carousel-inner .project-card .project-body .project-link:hover {
-  background-color: #fafafa;
-  color: #061225;
-  border: 2px solid #061225;
+#projects #project-carousel .carousel-inner .project-card .project-body .project-link:hover {
+  background-color: #FEFEFC;
+  color: #392C3F;
+  border: 2px solid #392C3F;
 }
 
-#project-carousel .carousel-control-prev,
-#project-carousel .carousel-control-next {
+#projects #project-carousel .carousel-control-prev,
+#projects #project-carousel .carousel-control-next {
   width: 10%;
 }
 
-#project-carousel .carousel-control-prev .carousel-btn i,
-#project-carousel .carousel-control-next .carousel-btn i {
-  color: rgba(6, 18, 37, 0.8);
+#projects #project-carousel .carousel-control-prev .carousel-btn i,
+#projects #project-carousel .carousel-control-next .carousel-btn i {
+  color: #392C3F;
   font-size: 1.5rem;
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-control-prev .carousel-btn i,
-  #project-carousel .carousel-control-next .carousel-btn i {
+  #projects #project-carousel .carousel-control-prev .carousel-btn i,
+  #projects #project-carousel .carousel-control-next .carousel-btn i {
     font-size: 1.8rem;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-control-prev,
-  #project-carousel .carousel-control-next {
+  #projects #project-carousel .carousel-control-prev,
+  #projects #project-carousel .carousel-control-next {
     width: 10%;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-control-prev,
-  #project-carousel .carousel-control-next {
+  #projects #project-carousel .carousel-control-prev,
+  #projects #project-carousel .carousel-control-next {
     width: 7%;
   }
 }
 
 @media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #project-carousel .carousel-control-prev,
-  #project-carousel .carousel-control-next {
+  #projects #project-carousel .carousel-control-prev,
+  #projects #project-carousel .carousel-control-next {
     width: 3%;
   }
 }

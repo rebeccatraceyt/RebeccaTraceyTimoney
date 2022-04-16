@@ -6,7 +6,7 @@
 @import './resets';
 @import './mixins';
 @import './nav';
-@import './divider';
+
 
 // Home Section
 #home {
@@ -140,165 +140,172 @@
 
 
 // Projects Section
-#project-carousel {
-
-    padding: 10% 5%;
-    margin: 10% 2% 1%;
-    background-color: $white;
-
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-
-    -webkit-box-shadow: $dark-purple 0px 0 10px;
-    -moz-box-shadow: $dark-purple 0 0 10px;
-    box-shadow: $dark-purple 0 0 10px;
-
-    @include tablet {
-        margin: 10%;
-        height: 65%;
-    }
-
-    @include tabletLandscape {
-        margin: 5% 8%;
-        padding: 5%;
-    }
-
-    @include desktop {
-        margin: 0 auto 10%;
-        padding: 2%;
-        width: 75%;
-        height: 70%;
-    }
-
-    .carousel-indicators {
-        li {
-            background-color: $dark-purple;   
-        }
-    }
-
-    .carousel-inner{
-        width: 100%;
-        height: 100%;
-        
-        .project-card {
-            padding: 5%;
-            border: none;
-
-            @include tablet {
-                padding: 4%;
-            }
-
-            @include tabletLandscape {
-                padding: 4% 4% 0;
-            }
-
-            @include desktop {
-                padding: 4%;
-                height: 100%;
-                width: 100%;
-            }
-
-            .project-header {
-                img {
+#projects {
+    background-color: $yellow;
     
-                    @include tablet {
-                        padding: 0;
-                    }
+    #project-carousel {
     
-                    @include desktop {
-                        padding: 0;
-                    }
-                }
-            }
-
-
-            .project-body {
-
-                .project-title {
-                    font-family: $title-font;
-                    color: $dark-purple;
-                    font-weight: 600;
+        padding: 10% 5%;
+        margin: 2% 2% 1%;
+        background-color: $pink;
     
-                    @include tablet {
-                        font-size: 2rem;
-                    }
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
     
-                    @include desktop {
-                        font-size: 2rem;
-                    }
-                }
+        -webkit-box-shadow: $dark-purple 0px 0 10px;
+        -moz-box-shadow: $dark-purple 0 0 10px;
+        box-shadow: $dark-purple 0 0 10px;
     
-                .project-divider {
-                    /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
-                    margin: 10px 0;
-                    border: 0;
-                    clear: both;
-                    width: 100%;
-                    height: 2px;
-                    border-radius: 25%;
-                    
-                    -webkit-border-radius: 20px;
-                    -moz-border-radius: 20px;
-                    border-radius: 20px;
-                    -webkit-box-shadow: inset 0 12px 12px -12px $dark-purple;
-                    -moz-box-shadow: inset 0 12px 12px -12px $dark-purple;
-                    box-shadow: inset 0 12px 12px -12px $dark-purple;
-
-                    @include desktop {
-                        margin: 10px 0 15px;
-                    }
-                }
-
-                .project-text {
-                    @include desktop {
-                        font-size: 1.2rem;
-                        line-height: 35px;
-                    }
-                }
-                .project-link {
-                    color: $dark-purple;
-                    font-size: 1.1rem;
-                    font-family: $title-font;
-                    font-weight: 700;
-
-                    @include desktop {
-                        font-size: 1.3rem;
-                        line-height: 35px;
-                    }
-                }
-                .project-link:hover {
-                    @include btnHover;
-                }
-            }
-        }
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-
-        width: 10%;
-        .carousel-btn{
-            i {
-                color: $dark-purple;
-                font-size: 1.5rem;
-
-                @include desktop {
-                    font-size: 1.8rem;
-                }
-            }
-        }
-
         @include tablet {
-            width: 10%;
+            margin: 8% 10%;
+            height: 65%;
         }
-
+    
         @include tabletLandscape {
-            width: 7%;
+            margin: 2% 10%;
+            padding: 5%;
         }
-
+    
         @include desktop {
-            width: 3%;
+            margin: 0 auto 10%;
+            padding: 2%;
+            width: 75%;
+            height: 70%;
+        }
+    
+        .carousel-indicators {
+            li {
+                background-color: $white;   
+            }
+        }
+    
+        .carousel-inner{
+            width: 100%;
+            height: 100%;
+            
+            .project-card {
+                padding: 4%;
+                border: none;
+    
+                @include tablet {
+                    padding: 4%;
+                }
+    
+                @include tabletLandscape {
+                    padding: 4% 4% 0;
+                }
+    
+                @include desktop {
+                    padding: 4%;
+                    height: 100%;
+                    width: 100%;
+                }
+    
+                .project-header {
+                    img {
+        
+                        @include tablet {
+                            padding: 0;
+                        }
+        
+                        @include desktop {
+                            padding: 0;
+                        }
+                    }
+                }
+    
+    
+                .project-body {
+    
+                    .project-title {
+                        font-family: $title-font;
+                        color: $dark-purple;
+                        font-weight: 600;
+                        margin-top: 10px;
+        
+                        @include tablet {
+                            font-size: 2rem;
+                        }
+                        @include tabletLandscape {
+                            font-size: 1.5rem;
+                        }
+        
+                        @include desktop {
+                            font-size: 2rem;
+                        }
+                    }
+        
+                    .project-divider {
+                        /*ref: https://stackoverflow.com/questions/12639823/hr-not-showing*/
+                        margin: 10px 0;
+                        border: 0;
+                        clear: both;
+                        width: 100%;
+                        height: 2px;
+                        border-radius: 25%;
+                        
+                        -webkit-border-radius: 20px;
+                        -moz-border-radius: 20px;
+                        border-radius: 20px;
+                        -webkit-box-shadow: inset 0 12px 12px -12px $dark-purple;
+                        -moz-box-shadow: inset 0 12px 12px -12px $dark-purple;
+                        box-shadow: inset 0 12px 12px -12px $dark-purple;
+    
+                        @include desktop {
+                            margin: 10px 0 15px;
+                        }
+                    }
+    
+                    .project-text {
+                        @include desktop {
+                            font-size: 1.2rem;
+                            line-height: 35px;
+                        }
+                    }
+                    .project-link {
+                        color: $white;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+    
+                        @include desktop {
+                            font-size: 1.3rem;
+                            line-height: 35px;
+                        }
+                    }
+                    .project-link:hover {
+                        @include btnHover;
+                    }
+                }
+            }
+        }
+    
+        .carousel-control-prev,
+        .carousel-control-next {
+    
+            width: 10%;
+            .carousel-btn{
+                i {
+                    color: $dark-purple;
+                    font-size: 1.5rem;
+    
+                    @include desktop {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+    
+            @include tablet {
+                width: 10%;
+            }
+    
+            @include tabletLandscape {
+                width: 7%;
+            }
+    
+            @include desktop {
+                width: 3%;
+            }
         }
     }
 }
