@@ -98,7 +98,7 @@ The information architecture was organized in a **hierarchial tree structure** i
 </p>
 
 #### Skeleton 
-High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=0%3A1 "Link to Portfolio Workspace") with providing a positive user experience in mind:
+High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=104%3A194 "Link to Portfolio Workspace") with providing a positive user experience in mind:
 
 <div align="center">
 <img src="markdown-files/wireframe.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
@@ -112,11 +112,11 @@ The chosen colour scheme is reflective of the developers style of creativity. Th
 
 ![#FEFEFC](https://via.placeholder.com/15/FEFEFC/000000?text=+) `#FEFEFC`<br>
 ![#E7E8B0](https://via.placeholder.com/15/E7E8B0/000000?text=+) `#E7E8B0` <br>
-![#A5A1BF](https://via.placeholder.com/15/A5A1BF/000000?text=+) `#A5A1BF` <br>
+![#A48BB6](https://via.placeholder.com/15/A48BB6/000000?text=+) `#A48BB6` <br>
 ![#ED71A4](https://via.placeholder.com/15/ED71A4/000000?text=+) `#ED71A4` <br>
 ![#C6536E](https://via.placeholder.com/15/C6536E/000000?text=+) `#C6536E` <br>
 ![#583C62](https://via.placeholder.com/15/583C62/000000?text=+) `#583C62` <br>
-![#392C3F](https://via.placeholder.com/15/392C3F/000000?text=+) `#392C3F` 
+![#2C2841](https://via.placeholder.com/15/2C2841/000000?text=+) `#2C2841` 
 
 **Typography**
 
