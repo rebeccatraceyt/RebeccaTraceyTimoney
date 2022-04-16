@@ -109,10 +109,6 @@ nav {
             top: 18px;
             right: 18px;
         }
-
-        @include desktop {
-            display: none;
-        }
     }
 
     #nav-menu {
