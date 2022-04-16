@@ -18,44 +18,20 @@
     }
 }
 html {
-    background-color: $body;
+    // background-color: $dark-purple;
+    background-color: $dark-purple;
 }
 body {
     font-family: $body-font;
-    color: $body;
+    color: $white;
 
     display: flex;
     flex-direction: column;
-
-    background: linear-gradient(-30deg, $blue, $purple);
-    background-size: 400% 400%;
-    animation: gradient 10s ease-in-out infinite;
-    
-    @keyframes gradient {
-        /* ref: https://codepen.io/hylobates-lar/pen/qBbQeON */
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-}
-main {
-    height: 100vh;
-    overflow: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 section {
     height: 100vh;
     width: 100vw;
-    scroll-snap-align: start;
 }
-
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
@@ -73,19 +49,17 @@ li {
 .page-top {
 
     padding: 5%;
-    margin-top: 15%;
 
     @include tablet {
         padding: 0 5%;
     }
 
     @include tabletLandscape {
-        margin-top: 7%;
     }
 
     @include desktop {
         padding: 0;
-        margin: 5% 5% 2% 5%;
+        margin: 0% 5% 2% 5%;
     }
 
 
@@ -94,6 +68,7 @@ li {
             font-family: $title-font;
             font-size: 2rem;
             letter-spacing: 2px;
+            color: $dark-purple;
     
             @include tablet {
                 font-size: 2.8rem;
