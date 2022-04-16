@@ -75,3 +75,41 @@
         margin: 7% 3% 0%;
     }
 }
+
+
+@mixin pageTitle {
+    font-family: $title-font;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 10%;
+
+    @include tablet {
+        font-size: 2.8rem;
+        margin-top: 15%;
+    }
+
+    @include tabletLandscape {
+        margin-top: 10%;
+    }
+
+    @include desktop {
+        font-size: 3.2rem;
+        margin-top: 5%;
+    }
+}
+
+@mixin pageTop {
+    padding: 5% 1% 5% 5%;
+
+    @include tablet {
+        padding: 0 5%;
+    }
+
+    @include tabletLandscape {
+    }
+
+    @include desktop {
+        padding: 0;
+        margin: 0% 5% 2% 5%;
+    }
+}

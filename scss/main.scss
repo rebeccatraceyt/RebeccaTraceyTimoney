@@ -142,6 +142,17 @@
 // Projects Section
 #projects {
     background-color: $yellow;
+
+    .page-top {
+        @include pageTop();
+
+        .page-title {
+            h1 {
+                @include pageTitle ();
+                color: $dark-purple;
+            }
+        }
+    }
     
     #project-carousel {
     
@@ -312,11 +323,39 @@
 
 
 // Skills Section
-#skills-sec {
-    margin: 2% 5%;
+#skills {
 
-    .skills-title{
-        font-family: $title-font;
-        font-weight: 500;
+    background-color: $dark-purple;
+
+    .page-top {
+        @include pageTop();
+        
+        .page-title {
+            h1 {
+                @include pageTitle ();
+                color: $yellow;
+            }
+        }
+    }
+
+    #skills-sec {
+        margin: 1% 5%;
+    
+        .skills-title{
+            font-family: $title-font;
+            font-weight: 500;
+            color: $yellow;
+            font-size: 1.1rem;
+            margin: 0 0 10px 0;;
+        }
+
+        .skills-icon {
+            margin-bottom: 15px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
     }
 }

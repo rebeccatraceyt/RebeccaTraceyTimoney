@@ -33,7 +33,7 @@
 }
 
 html {
-  background-color: #392C3F;
+  background-color: #2C2841;
 }
 
 body {
@@ -68,51 +68,6 @@ li {
   height: 1.9rem;
 }
 
-.page-top {
-  padding: 5%;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  .page-top {
-    padding: 0 5%;
-  }
-}
-
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  .page-top {
-    padding: 0;
-    margin: 0% 5% 2% 5%;
-  }
-}
-
-.page-top .page-title h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  color: #392C3F;
-  margin-top: 10%;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  .page-top .page-title h1 {
-    font-size: 2.8rem;
-    margin-top: 15%;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .page-top .page-title h1 {
-    margin-top: 10%;
-  }
-}
-
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  .page-top .page-title h1 {
-    font-size: 3.2rem;
-    margin-top: 5%;
-  }
-}
-
 /* ----------------------- *\ 
      Mixin Declaration
 \* ----------------------- */
@@ -125,7 +80,7 @@ li {
 /* ----------------------- *\ 
      Mixin Declaration
 \* ----------------------- */
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   nav {
     position: fixed;
     width: 100%;
@@ -133,11 +88,11 @@ li {
   }
 }
 
-#mobile-nav {
+nav #mobile-nav {
   text-align: center;
 }
 
-#mobile-nav #nav-btn {
+nav #mobile-nav #nav-btn {
   background: transparent;
   border: none;
   height: 30px;
@@ -149,11 +104,11 @@ li {
   cursor: pointer;
 }
 
-#mobile-nav #nav-btn:focus {
+nav #mobile-nav #nav-btn:focus {
   outline: none;
 }
 
-#mobile-nav #nav-btn span {
+nav #mobile-nav #nav-btn span {
   background-color: #FEFEFC;
   border-radius: 2px;
   height: 3px;
@@ -163,7 +118,7 @@ li {
   transition: height 100ms;
 }
 
-#mobile-nav #nav-btn span::after, #mobile-nav #nav-btn span::before {
+nav #mobile-nav #nav-btn span::after, nav #mobile-nav #nav-btn span::before {
   content: '';
   background-color: #FEFEFC;
   border-radius: 2px;
@@ -176,54 +131,54 @@ li {
   transition: all 200ms;
 }
 
-#mobile-nav #nav-btn span::after {
+nav #mobile-nav #nav-btn span::after {
   top: -7px;
 }
 
-#mobile-nav #nav-btn span::before {
+nav #mobile-nav #nav-btn span::before {
   bottom: -7px;
 }
 
-#mobile-nav #nav-btn.animate > span {
+nav #mobile-nav #nav-btn.animate > span {
   height: 0;
 }
 
-#mobile-nav #nav-btn.animate > span::after,
-#mobile-nav #nav-btn.animate > span::before {
+nav #mobile-nav #nav-btn.animate > span::after,
+nav #mobile-nav #nav-btn.animate > span::before {
   background-color: #FEFEFC;
   top: 1px;
 }
 
-#mobile-nav #nav-btn.animate > span:after {
+nav #mobile-nav #nav-btn.animate > span:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#mobile-nav #nav-btn.animate > span:before {
+nav #mobile-nav #nav-btn.animate > span:before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mobile-nav #nav-btn {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mobile-nav #nav-btn {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav #mobile-nav #nav-btn {
     top: 45px;
     right: 60px;
   }
-  #mobile-nav #nav-btn span,
-  #mobile-nav #nav-btn > span::after,
-  #mobile-nav #nav-btn > span::before {
+  nav #mobile-nav #nav-btn span,
+  nav #mobile-nav #nav-btn > span::after,
+  nav #mobile-nav #nav-btn > span::before {
     background-color: #C6536E;
   }
 }
 
-#mobile-nav #nav-bg {
+nav #mobile-nav #nav-bg {
   background: #C6536E;
   position: fixed;
   border-radius: 2px;
@@ -236,20 +191,14 @@ li {
           box-shadow: #FEFEFC 0 0 5px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mobile-nav #nav-bg {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav #mobile-nav #nav-bg {
     top: 18px;
     right: 18px;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mobile-nav #nav-bg {
-    display: none;
-  }
-}
-
-#mobile-nav #nav-menu {
+nav #mobile-nav #nav-menu {
   background-color: #C6536E;
   color: #FEFEFC;
   position: fixed;
@@ -263,12 +212,12 @@ li {
           box-shadow: #FEFEFC 0 0 5px;
 }
 
-#mobile-nav #nav-menu #nav-list > ul li {
+nav #mobile-nav #nav-menu #nav-list > ul li {
   width: 100%;
   position: relative;
 }
 
-#mobile-nav #nav-menu #nav-list > ul a {
+nav #mobile-nav #nav-menu #nav-list > ul a {
   display: block;
   text-align: center;
   margin: 17px 0;
@@ -276,21 +225,21 @@ li {
   font-weight: 100;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mobile-nav #nav-menu {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav #mobile-nav #nav-menu {
     top: 78px;
     right: 18px;
   }
 }
 
-#lg-nav {
+nav #lg-nav {
   float: right;
   margin: 10px;
   color: #C6536E;
   text-align: center;
 }
 
-#lg-nav > a {
+nav #lg-nav > a {
   margin: 15px;
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
@@ -299,7 +248,7 @@ li {
   position: relative;
 }
 
-#lg-nav > a::before {
+nav #lg-nav > a::before {
   content: "";
   position: absolute;
   display: block;
@@ -316,16 +265,24 @@ li {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-#lg-nav > a:hover::before {
+nav #lg-nav > a:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-/* ----------------------- *\ 
-         Socials Nav
-\* ----------------------- */
-/* ref: https://codemyui.com/hamburger-menu-social-sharing-icons/ */
-#socials {
+footer {
+  background-color: #C6536E;
+  /* ----------------------- *\ 
+             Socials Nav
+    \* ----------------------- */
+  /* ref: https://codemyui.com/hamburger-menu-social-sharing-icons/ */
+  /* ----------------------- *\ 
+          Reveal Footer Nav
+    \* ----------------------- */
+  /* ref: https://codepen.io/mvaneijgen/pen/yMpgpE */
+}
+
+footer #socials {
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -342,7 +299,7 @@ li {
   z-index: 101;
 }
 
-#socials span {
+footer #socials span {
   position: absolute;
   padding: 15px 10px;
   background: #C6536E;
@@ -352,65 +309,49 @@ li {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: 1px solid #C6536E;
-  -webkit-box-shadow: #746E90 0px 0 5px;
-  box-shadow: #746E90 0 0 5px;
+  -webkit-box-shadow: #A48BB6 0px 0 5px;
+  box-shadow: #A48BB6 0 0 5px;
 }
 
-#socials span.hidden {
+footer #socials span.hidden {
   visibility: hidden;
 }
 
-#socials span:last-child {
+footer #socials span:last-child {
   padding: 13px 15px;
   font-size: 1.3rem;
 }
 
-#socials span:nth-child(1), #socials span:nth-child(2), #socials span:nth-child(3) {
+footer #socials span:nth-child(1), footer #socials span:nth-child(2), footer #socials span:nth-child(3) {
   padding: 10px 15px;
 }
 
-#socials span:nth-child(1).show {
+footer #socials span:nth-child(1).show {
   -webkit-transform: rotate(180deg) translate(90px) rotate(180deg);
           transform: rotate(180deg) translate(90px) rotate(180deg);
 }
 
-#socials span:nth-child(2).show {
+footer #socials span:nth-child(2).show {
   -webkit-transform: rotate(225deg) translate(90px) rotate(135deg);
           transform: rotate(225deg) translate(90px) rotate(135deg);
 }
 
-#socials span:nth-child(3).show {
+footer #socials span:nth-child(3).show {
   -webkit-transform: rotate(270deg) translate(90px) rotate(90deg);
           transform: rotate(270deg) translate(90px) rotate(90deg);
 }
 
-#socials span:hover {
-  background: #746E90;
-  border: 1px solid #746E90;
+footer #socials span:hover {
+  background: #A48BB6;
+  border: 1px solid #A48BB6;
 }
 
-/* ----------------------- *\ 
-         Footer Nav
-\* ----------------------- */
-/* ref: https://codepen.io/mvaneijgen/pen/yMpgpE */
-#footer-scroll {
-  height: 100px;
+footer #footer-scroll {
+  height: 80px;
   background-color: #C6536E;
 }
 
-#footer-scroll #footer-ruler {
-  background-color: transparent;
-  margin: 0;
-  border: 0;
-  clear: both;
-  display: block;
-  width: 100%;
-  height: 12px;
-  -webkit-box-shadow: #746E90 0px 0 5px;
-  box-shadow: #746E90 0 0 5px;
-}
-
-#footer-scroll .footer-content {
+footer #footer-scroll .footer-content {
   margin: 10px auto;
   width: 100%;
   text-align: center;
@@ -429,38 +370,38 @@ li {
           transition-timing-function: ease;
 }
 
-#footer-scroll .footer-content a {
+footer #footer-scroll .footer-content a {
   word-spacing: 10px;
   font-size: 1.3rem;
 }
 
-#footer-scroll .footer-content > a > i {
+footer #footer-scroll .footer-content > a > i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #FEFEFC;
 }
 
-#footer-scroll .footer-content.show {
+footer #footer-scroll .footer-content.show {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
 
-#footer-scroll .footer-content > a > i:hover {
-  color: #746E90;
+footer #footer-scroll .footer-content > a > i:hover {
+  color: #A48BB6;
 }
 
 #home {
-  background-color: #392C3F;
+  background-color: #2C2841;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #home {
     padding: 0 10%;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #home {
     padding: 0 5%;
   }
@@ -494,13 +435,13 @@ li {
           animation: text 2s steps(29, end) 0.5s 1 normal both, cursor 600ms steps(29, end) infinite;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h1 {
     font-size: 2.8rem;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h1 {
     font-size: 3.2rem;
   }
@@ -547,13 +488,13 @@ li {
   color: #C6536E;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h5 {
     font-size: 1.8rem;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text h5 {
     font-size: 1.9rem;
   }
@@ -563,13 +504,13 @@ li {
   margin-bottom: 2rem;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text p {
     font-size: 1.3rem;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text p {
     font-size: 1.4rem;
   }
@@ -585,24 +526,24 @@ li {
 
 #home #home-content #home-text .btns {
   border-radius: 5px;
-  background-color: #746E90;
+  background-color: #A48BB6;
   font-size: .9rem;
   font-family: "Poppins", sans-serif;
   color: #FEFEFC;
   font-weight: 700;
   padding: 15px 20px;
-  border: 1px solid #392C3F;
-  -webkit-box-shadow: #746E90 0px 0 5px;
-  box-shadow: #746E90 0 0 5px;
+  border: 1px solid #2C2841;
+  -webkit-box-shadow: #A48BB6 0px 0 5px;
+  box-shadow: #A48BB6 0 0 5px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text .btns {
     font-size: 1rem;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text .btns {
     font-size: 1.2rem;
   }
@@ -614,18 +555,18 @@ li {
 
 #home #home-content #home-text .btns:hover {
   background-color: #FEFEFC;
-  color: #392C3F;
-  border: 2px solid #392C3F;
+  color: #2C2841;
+  border: 2px solid #2C2841;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text {
     max-width: 90%;
     margin: 0 20% 20% 1%;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #home #home-content #home-text {
     max-width: 60%;
     margin: 0 15% 10% 1%;
@@ -636,30 +577,75 @@ li {
   background-color: #E7E8B0;
 }
 
+#projects .page-top {
+  padding: 5% 1% 5% 5%;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects .page-top {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects .page-top {
+    padding: 0;
+    margin: 0% 5% 2% 5%;
+  }
+}
+
+#projects .page-top .page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-top: 10%;
+  color: #2C2841;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects .page-top .page-title h1 {
+    font-size: 2.8rem;
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects .page-top .page-title h1 {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #projects .page-top .page-title h1 {
+    font-size: 3.2rem;
+    margin-top: 5%;
+  }
+}
+
 #projects #project-carousel {
   padding: 10% 5%;
   margin: 2% 2% 1%;
   background-color: #C6536E;
   border-radius: 20px;
-  -webkit-box-shadow: #392C3F 0px 0 10px;
-  box-shadow: #392C3F 0 0 10px;
+  -webkit-box-shadow: #2C2841 0px 0 10px;
+  box-shadow: #2C2841 0 0 10px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel {
     margin: 8% 10%;
     height: 65%;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel {
     margin: 2% 10%;
     padding: 5%;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel {
     margin: 0 auto 10%;
     padding: 2%;
@@ -682,19 +668,19 @@ li {
   border: none;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card {
     padding: 4%;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card {
     padding: 4% 4% 0;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card {
     padding: 4%;
     height: 100%;
@@ -702,13 +688,13 @@ li {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-header img {
     padding: 0;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-header img {
     padding: 0;
   }
@@ -716,24 +702,24 @@ li {
 
 #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
   font-family: "Poppins", sans-serif;
-  color: #392C3F;
+  color: #2C2841;
   font-weight: 600;
   margin-top: 10px;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 2rem;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 1.5rem;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-body .project-title {
     font-size: 2rem;
   }
@@ -748,17 +734,17 @@ li {
   height: 2px;
   border-radius: 25%;
   border-radius: 20px;
-  -webkit-box-shadow: inset 0 12px 12px -12px #392C3F;
-  box-shadow: inset 0 12px 12px -12px #392C3F;
+  -webkit-box-shadow: inset 0 12px 12px -12px #2C2841;
+  box-shadow: inset 0 12px 12px -12px #2C2841;
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-body .project-divider {
     margin: 10px 0 15px;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-body .project-text {
     font-size: 1.2rem;
     line-height: 35px;
@@ -771,7 +757,7 @@ li {
   font-weight: 600;
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-inner .project-card .project-body .project-link {
     font-size: 1.3rem;
     line-height: 35px;
@@ -780,8 +766,8 @@ li {
 
 #projects #project-carousel .carousel-inner .project-card .project-body .project-link:hover {
   background-color: #FEFEFC;
-  color: #392C3F;
-  border: 2px solid #392C3F;
+  color: #2C2841;
+  border: 2px solid #2C2841;
 }
 
 #projects #project-carousel .carousel-control-prev,
@@ -791,44 +777,105 @@ li {
 
 #projects #project-carousel .carousel-control-prev .carousel-btn i,
 #projects #project-carousel .carousel-control-next .carousel-btn i {
-  color: #392C3F;
+  color: #2C2841;
   font-size: 1.5rem;
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-control-prev .carousel-btn i,
   #projects #project-carousel .carousel-control-next .carousel-btn i {
     font-size: 1.8rem;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-control-prev,
   #projects #project-carousel .carousel-control-next {
     width: 10%;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-control-prev,
   #projects #project-carousel .carousel-control-next {
     width: 7%;
   }
 }
 
-@media screen and (min-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #projects #project-carousel .carousel-control-prev,
   #projects #project-carousel .carousel-control-next {
     width: 3%;
   }
 }
 
-#skills-sec {
-  margin: 2% 5%;
+#skills {
+  background-color: #2C2841;
 }
 
-#skills-sec .skills-title {
+#skills .page-top {
+  padding: 5% 1% 5% 5%;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills .page-top {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills .page-top {
+    padding: 0;
+    margin: 0% 5% 2% 5%;
+  }
+}
+
+#skills .page-top .page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-top: 10%;
+  color: #E7E8B0;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills .page-top .page-title h1 {
+    font-size: 2.8rem;
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills .page-top .page-title h1 {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills .page-top .page-title h1 {
+    font-size: 3.2rem;
+    margin-top: 5%;
+  }
+}
+
+#skills #skills-sec {
+  margin: 1% 5%;
+}
+
+#skills #skills-sec .skills-title {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  color: #E7E8B0;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+}
+
+#skills #skills-sec .skills-icon {
+  margin-bottom: 15px;
+}
+
+#skills #skills-sec .skills-icon img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
