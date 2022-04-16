@@ -2,21 +2,29 @@
      Mixin Declaration
 \* ----------------------- */
 
+@mixin borderShadow {
+    -webkit-box-shadow: $light-purple 0px 0 5px;
+    -moz-box-shadow: $light-purple 0 0 5px;
+    box-shadow: $light-purple 0 0 5px;
+}
+
 @mixin btnStyle {
-    border-radius: 2px;
-    background-color: $body;
+    border-radius: 5px;
+    background-color: $light-purple;
     font-size: .9rem;
     font-family: $title-font;
     color: $white;
     font-weight: 700;
     padding: 15px 20px;
-    box-shadow: $body 0 0 5px;
+    
+    border: 1px solid $dark-purple;
+    @include borderShadow();
 }
 
 @mixin btnHover {
     background-color: $white;
-    color: $body;
-    border: 2px solid $body;
+    color: $dark-purple;
+    border: 2px solid $dark-purple;
 }
 
 @mixin tablet {

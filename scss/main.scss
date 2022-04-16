@@ -6,9 +6,12 @@
 @import './resets';
 @import './mixins';
 @import './nav';
+@import './divider';
 
 // Home Section
 #home {
+
+    background-color: $dark-purple;
 
     @include tablet {
         padding: 0 10%;
@@ -29,6 +32,7 @@
             h1 {
                 font-family: $title-font;
                 font-size: 2rem;
+                color: $yellow;
                 border-right: solid 3px $white;
                 letter-spacing: 2px;
                 padding-right: 5px;
@@ -70,6 +74,7 @@
     
             h5 {
                 font-size: 1.2rem;
+                color: $pink;
 
                 @include tablet {
                     font-size: 1.8rem;
@@ -91,7 +96,11 @@
                     font-size: 1.4rem;
                 }
 
-                a:hover, a:focus, a:active {
+                a:hover, a:focus {
+                    color: $pink;
+                }
+                
+                a:active {
                     color: $white;
                 }
             }
@@ -141,9 +150,9 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
 
-    -webkit-box-shadow: $body-opaque 0px 0 10px;
-    -moz-box-shadow: $body-opaque 0 0 10px;
-    box-shadow: $body-opaque 0 0 10px;
+    -webkit-box-shadow: $dark-purple 0px 0 10px;
+    -moz-box-shadow: $dark-purple 0 0 10px;
+    box-shadow: $dark-purple 0 0 10px;
 
     @include tablet {
         margin: 10%;
@@ -164,7 +173,7 @@
 
     .carousel-indicators {
         li {
-            background-color: $body;   
+            background-color: $dark-purple;   
         }
     }
 
@@ -208,7 +217,7 @@
 
                 .project-title {
                     font-family: $title-font;
-                    color: $body;
+                    color: $dark-purple;
                     font-weight: 600;
     
                     @include tablet {
@@ -232,9 +241,9 @@
                     -webkit-border-radius: 20px;
                     -moz-border-radius: 20px;
                     border-radius: 20px;
-                    -webkit-box-shadow: inset 0 12px 12px -12px $body-opaque;
-                    -moz-box-shadow: inset 0 12px 12px -12px $body-opaque;
-                    box-shadow: inset 0 12px 12px -12px $body-opaque;
+                    -webkit-box-shadow: inset 0 12px 12px -12px $dark-purple;
+                    -moz-box-shadow: inset 0 12px 12px -12px $dark-purple;
+                    box-shadow: inset 0 12px 12px -12px $dark-purple;
 
                     @include desktop {
                         margin: 10px 0 15px;
@@ -248,7 +257,7 @@
                     }
                 }
                 .project-link {
-                    color: $body;
+                    color: $dark-purple;
                     font-size: 1.1rem;
                     font-family: $title-font;
                     font-weight: 700;
@@ -271,7 +280,7 @@
         width: 10%;
         .carousel-btn{
             i {
-                color: $body-opaque;
+                color: $dark-purple;
                 font-size: 1.5rem;
 
                 @include desktop {
