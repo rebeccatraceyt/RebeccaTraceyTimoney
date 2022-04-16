@@ -10,287 +10,281 @@ nav {
         width: 100%;
         z-index: 100;
     }
-}
-
-#mobile-nav {
-    text-align: center;
-
-    #nav-btn {
-        background: transparent;
-        border: none;
-        height: 30px;
-        width: 30px;
-        top: 35px;
-        right: 43px;
-        position: fixed;
-        z-index: 102;
-        cursor: pointer;
-
-        &:focus {
-            outline: none;
-        }
-
-        span {
-            background-color: $white;
-            border-radius: 2px;
-            height: 3px;
-            width: 100%;
-            position: absolute;
-            transition: height 100ms;
-
-            &::after,
-            &::before {
-                content: '';
+    
+    #mobile-nav {
+        text-align: center;
+    
+        #nav-btn {
+            background: transparent;
+            border: none;
+            height: 30px;
+            width: 30px;
+            top: 35px;
+            right: 43px;
+            position: fixed;
+            z-index: 102;
+            cursor: pointer;
+    
+            &:focus {
+                outline: none;
+            }
+    
+            span {
                 background-color: $white;
                 border-radius: 2px;
                 height: 3px;
                 width: 100%;
                 position: absolute;
-                left: 50%;
-                margin-left: -15px;
-                transition: all 200ms;
+                transition: height 100ms;
+    
+                &::after,
+                &::before {
+                    content: '';
+                    background-color: $white;
+                    border-radius: 2px;
+                    height: 3px;
+                    width: 100%;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -15px;
+                    transition: all 200ms;
+                }
+    
+                &::after {
+                    top: -7px;
+                }
+    
+                &::before {
+                    bottom: -7px;
+                }
             }
-
-            &::after {
-                top: -7px;
+    
+            &.animate > span {
+                height: 0;
             }
-
-            &::before {
-                bottom: -7px;
+    
+            &.animate > span::after, 
+            &.animate > span::before {
+                background-color: $white;
+                top: 1px;
             }
-        }
-
-        &.animate > span {
-            height: 0;
-        }
-
-        &.animate > span::after, 
-        &.animate > span::before {
-            background-color: $white;
-            top: 1px;
-        }
-
-        &.animate > span:after {
-            transform: rotate(45deg);
-        }
-        &.animate > span:before {
-            transform: rotate(-45deg);
-        }
-
-        @include tablet {
-            top: 45px;
-            right: 60px;
-        }
-
-        @include desktop {
-            top: 45px;
-            right: 60px;
-
-            & span,
-            & > span::after,
-            & > span::before {
-                background-color: $pink;
+    
+            &.animate > span:after {
+                transform: rotate(45deg);
+            }
+            &.animate > span:before {
+                transform: rotate(-45deg);
+            }
+    
+            @include tablet {
+                top: 45px;
+                right: 60px;
+            }
+    
+            @include desktop {
+                top: 45px;
+                right: 60px;
+    
+                & span,
+                & > span::after,
+                & > span::before {
+                    background-color: $pink;
+                }
             }
         }
-    }
-
-    #nav-bg {
-        background: $pink;
-        position: fixed;
-        border-radius: 2px;
-        width: 82px;
-        top: 9px;
-        right: 3px;
-        padding: 50px 10px 10px 10px;
-        z-index: 100;
-        box-shadow: $white 0 0 5px;
-
-        @include tablet {
-            top: 18px;
-            right: 18px;
+    
+        #nav-bg {
+            background: $pink;
+            position: fixed;
+            border-radius: 2px;
+            width: 82px;
+            top: 9px;
+            right: 3px;
+            padding: 50px 10px 10px 10px;
+            z-index: 100;
+            box-shadow: $white 0 0 5px;
+    
+            @include tablet {
+                top: 18px;
+                right: 18px;
+            }
         }
-    }
-
-    #nav-menu {
-        background-color: $pink;
-        color: $white;
-        position: fixed;
-        display: none;
-        border-radius: 2px;
-        top: 70px;
-        right: 3px;
-        padding: 10px 10px 10px 10px;
-        z-index: 101;
-        box-shadow: $white 0 0 5px;
-
-        #nav-list > ul li {
-            width: 100%;
-            position: relative;
-        }
-
-        #nav-list > ul a {
-            display: block;
-            text-align: center;
-            margin: 17px 0;
-            font-size: 1em;
-            font-weight: 100;
-        }
-
-        @include tablet {
-            top: 78px;
-            right: 18px;
-        }
-    }
-}
-
-#lg-nav {
-    float: right;
-    margin: 10px;
-    color: $pink;
-    text-align: center;
-
-
-    & > a {
-        margin: 15px;
-        font-family: $title-font;
-        font-size: 1.1rem;
-        letter-spacing: 2px;
-        font-weight: 500;
-        position: relative;
-
-        &::before {
-            // ref: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
-            content: "";
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
+    
+        #nav-menu {
             background-color: $pink;
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        &:hover::before {
-          transform: scaleX(1);
+            color: $white;
+            position: fixed;
+            display: none;
+            border-radius: 2px;
+            top: 70px;
+            right: 3px;
+            padding: 10px 10px 10px 10px;
+            z-index: 101;
+            box-shadow: $white 0 0 5px;
+    
+            #nav-list > ul li {
+                width: 100%;
+                position: relative;
+            }
+    
+            #nav-list > ul a {
+                display: block;
+                text-align: center;
+                margin: 17px 0;
+                font-size: 1em;
+                font-weight: 100;
+            }
+    
+            @include tablet {
+                top: 78px;
+                right: 18px;
+            }
         }
     }
-
-
-
-
-
-}
-
-/* ----------------------- *\ 
-         Socials Nav
-\* ----------------------- */
-/* ref: https://codemyui.com/hamburger-menu-social-sharing-icons/ */
-
-#socials {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 100%;
-    height: 50px;
-    margin-top: -50px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.3rem;
-    z-index: 101;
-
-    & span {
-        position: absolute;
-        padding: 15px 10px;
-        background: $pink;
-        color: $white;
-        border-radius: 50%;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        border: 1px solid $pink;
-
-        @include borderShadow();
-
-        &.hidden {
-            visibility: hidden;
+    
+    #lg-nav {
+        float: right;
+        margin: 10px;
+        color: $pink;
+        text-align: center;
+    
+    
+        & > a {
+            margin: 15px;
+            font-family: $title-font;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            position: relative;
+    
+            &::before {
+                // ref: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $pink;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+    
+            &:hover::before {
+              transform: scaleX(1);
+            }
         }
-        &:last-child {
-            padding: 13px 15px;
-            font-size: 1.3rem;
-        }
-        &:nth-child(1),
-        &:nth-child(2),
-        &:nth-child(3) {
-            padding: 10px 15px;
-        }
-        &:nth-child(1).show {
-            transform: rotate(180deg) translate(90px) rotate(180deg);
-        }
-        &:nth-child(2).show {
-            transform: rotate(225deg) translate(90px) rotate(135deg);
-        }
-        &:nth-child(3).show {
-            transform: rotate(270deg) translate(90px) rotate(90deg);
-        }
-
-        &:hover {
-            background: $light-purple;
-            border: 1px solid $light-purple;
-        }
+    
+    
+    
+    
+    
     }
 }
 
-/* ----------------------- *\ 
-         Footer Nav
-\* ----------------------- */
-/* ref: https://codepen.io/mvaneijgen/pen/yMpgpE */
 
-#footer-scroll {
-    height: 100px;
+
+footer {
+
     background-color: $pink;
 
-    #footer-ruler {
-        background-color: transparent;
-        margin: 0;
-        border: 0;
-        clear:both;
-        display:block;
-        width: 100%;               
-        height: 12px;
-        // box-shadow: inset 0 12px 12px -12px $white;
-
-        @include borderShadow();
-    }
-
-    .footer-content {
-        margin: 10px auto;
-        width: 100%;
-        text-align: center;
-        color: $white;
-        font-size: 1.1rem;
+    /* ----------------------- *\ 
+             Socials Nav
+    \* ----------------------- */
+    /* ref: https://codemyui.com/hamburger-menu-social-sharing-icons/ */
     
-        transform: translateY(50px);
-        opacity:0;
-        transition: transform, opacity;
-        transition-duration: .8s;
-        transition-timing-function: ease;
-
-        & a {
-            word-spacing: 10px;
-            font-size: 1.3rem;
-        }
-        & > a > i {
-            transition: all 0.3s ease-in-out;
+    #socials {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 100%;
+        height: 50px;
+        margin-top: -50px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.3rem;
+        z-index: 101;
+    
+        & span {
+            position: absolute;
+            padding: 15px 10px;
+            background: $pink;
             color: $white;
+            border-radius: 50%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border: 1px solid $pink;
+    
+            @include borderShadow();
+    
+            &.hidden {
+                visibility: hidden;
+            }
+            &:last-child {
+                padding: 13px 15px;
+                font-size: 1.3rem;
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                padding: 10px 15px;
+            }
+            &:nth-child(1).show {
+                transform: rotate(180deg) translate(90px) rotate(180deg);
+            }
+            &:nth-child(2).show {
+                transform: rotate(225deg) translate(90px) rotate(135deg);
+            }
+            &:nth-child(3).show {
+                transform: rotate(270deg) translate(90px) rotate(90deg);
+            }
+    
+            &:hover {
+                background: $light-purple;
+                border: 1px solid $light-purple;
+            }
         }
-        &.show {
-            transform: translateY(0);
-            opacity:1;
-        }
-
-        & > a > i:hover {
-            color: $light-purple;
+    }
+    
+    /* ----------------------- *\ 
+          Reveal Footer Nav
+    \* ----------------------- */
+    /* ref: https://codepen.io/mvaneijgen/pen/yMpgpE */
+    
+    #footer-scroll {
+        height: 80px;
+        background-color: $pink;
+    
+        .footer-content {
+            margin: 10px auto;
+            width: 100%;
+            text-align: center;
+            color: $white;
+            font-size: 1.1rem;
+        
+            transform: translateY(50px);
+            opacity:0;
+            transition: transform, opacity;
+            transition-duration: .8s;
+            transition-timing-function: ease;
+    
+            & a {
+                word-spacing: 10px;
+                font-size: 1.3rem;
+            }
+            & > a > i {
+                transition: all 0.3s ease-in-out;
+                color: $white;
+            }
+            &.show {
+                transform: translateY(0);
+                opacity:1;
+            }
+    
+            & > a > i:hover {
+                color: $light-purple;
+            }
         }
     }
 }
