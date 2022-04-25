@@ -21,11 +21,23 @@
         
         
         <!-- Scripts -->
-        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script> <!-- Iconify Import-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <!-- JQuery Import-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script> <!-- Bootstrap Import-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script> <!-- JQuery Form Validation -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script> <!-- Sweet Alert Import-->
         <script type="module" src="dist/js/main.js"></script>
+
+        <!-- emailjs integration -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_TMxBrvw73ZySzIBKjJ8E8");
+            })();
+        </script>
 
         <!-- Page title -->
         <title>Rebecca Tracey-Timoney</title>
@@ -293,6 +305,53 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Contact Content -->
+            <section id="contact" class="container-fluid" aria-label="Contact Section">
+                <div class="page-top row">
+                    <div class="col-12 page-title">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+                <div class="row contact-sec">
+                    <div class="col-12 col-lg-6">
+                        <h5 class="contact-title">Get In Touch</h5>
+                    </div>
+                    <div class="col-12 contact-icon">
+                        <a href="tel:+353894832297" target="_blank">
+                            <img src="dist/imgs/icons/phone.png" alt="Contact by phone" />
+                        </a>
+                        <a href="mailto:rebecca.traceytimoney@gmail.com?subject=Enquiry%20firect%20from%20Portfolio" target="_blank">
+                            <img src="dist/imgs/icons/email.png" alt="Contact by email" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/rebeccatraceytimoney/" target="_blank">
+                            <img src="dist/imgs/icons/linkedin.png" alt="Link to LinkedIn Account" />
+                        </a>
+                        <a href="https://twitter.com/DexterAtHeart" target="_blank">
+                            <img src="dist/imgs/icons/twitter.png" alt="Link to Twitter Account" />
+                        </a>
+                        <a href="https://github.com/rebeccatraceyt" target="_blank">
+                            <img src="dist/imgs/icons/github-pink.png" alt="Link to GitHub Account" />
+                        </a>
+                    </div>
+                </div>
+                <div class="row contact-sec">
+                    <div class="col-12">
+                        <h5 class="contact-title">Send A Message</h5>
+                        <p class="contact-info small">Please complete all fields</p>
+                        <p class="contact-info small">Inquiries are sent to my personal email</p>
+                    </div>
+                    <div class="col-12 contact-form form-group">
+                        <form id="contactForm" aria-label="Contact Form">                                
+                            <input class="contact-input form-control" type="text" name="from_name" id="from_name" placeholder="Name" aria-label="Enter Name" required>
+                            <input class="contact-input form-control" type="email" name="from_email" id="from_email" placeholder="Email" aria-label="Enter Email" required>
+                            <textarea class="contact-input form-control" name="message" id="message" placeholder="Leave a message" aria-label="Enter Message" rows="4" required></textarea>
+                            <input id="contactFormSubmit" type="submit" class="btn contact-btn" aria-label="Submit Button" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
         </main>
         
         <!-- Footer Content -->

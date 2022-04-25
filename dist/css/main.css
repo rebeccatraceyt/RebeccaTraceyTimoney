@@ -171,11 +171,6 @@ nav #mobile-nav #nav-btn.animate > span:before {
     top: 45px;
     right: 60px;
   }
-  nav #mobile-nav #nav-btn span,
-  nav #mobile-nav #nav-btn > span::after,
-  nav #mobile-nav #nav-btn > span::before {
-    background-color: #C6536E;
-  }
 }
 
 nav #mobile-nav #nav-bg {
@@ -309,8 +304,8 @@ footer #socials span {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: 1px solid #C6536E;
-  -webkit-box-shadow: #A48BB6 0px 0 5px;
-  box-shadow: #A48BB6 0 0 5px;
+  -webkit-box-shadow: #A48BB6 0px 0 3px;
+  box-shadow: #A48BB6 0 0 3px;
 }
 
 footer #socials span.hidden {
@@ -526,15 +521,15 @@ footer #footer-scroll .footer-content > a > i:hover {
 
 #home #home-content #home-text .btns {
   border-radius: 5px;
-  background-color: #A48BB6;
-  font-size: .9rem;
   font-family: "Poppins", sans-serif;
   color: #FEFEFC;
   font-weight: 700;
   padding: 15px 20px;
+  -webkit-box-shadow: #A48BB6 0px 0 3px;
+  box-shadow: #A48BB6 0 0 3px;
+  background-color: #A48BB6;
   border: 1px solid #2C2841;
-  -webkit-box-shadow: #A48BB6 0px 0 5px;
-  box-shadow: #A48BB6 0 0 5px;
+  font-size: .9rem;
 }
 
 @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -551,6 +546,8 @@ footer #footer-scroll .footer-content > a > i:hover {
 
 #home #home-content #home-text #home-btn {
   margin-right: 10px;
+  background-color: #583C62;
+  border: 1px solid #A48BB6;
 }
 
 #home #home-content #home-text .btns:hover {
@@ -859,7 +856,7 @@ footer #footer-scroll .footer-content > a > i:hover {
 }
 
 #skills #skills-sec {
-  margin: 1% 5%;
+  margin: 1% 2%;
 }
 
 #skills #skills-sec .skills-title {
@@ -877,5 +874,172 @@ footer #footer-scroll .footer-content > a > i:hover {
 #skills #skills-sec .skills-icon img {
   width: 100%;
   height: 100%;
+}
+
+#contact {
+  background-color: #E7E8B0;
+}
+
+#contact .page-top {
+  padding: 5% 1% 5% 5%;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .page-top {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .page-top {
+    padding: 0;
+    margin: 0% 5% 2% 5%;
+  }
+}
+
+#contact .page-top .page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-top: 10%;
+  color: #2C2841;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .page-top .page-title h1 {
+    font-size: 2.8rem;
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .page-top .page-title h1 {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .page-top .page-title h1 {
+    font-size: 3.2rem;
+    margin-top: 5%;
+  }
+}
+
+#contact .contact-sec {
+  margin: -10px;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .contact-sec {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .contact-sec {
+    margin: 40px;
+  }
+}
+
+#contact .contact-sec .contact-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #583C62;
+  font-size: 1.1rem;
+  margin: 10px 15px;
+}
+
+#contact .contact-sec .contact-info {
+  color: #583C62;
+  margin: 0 15px;
+}
+
+#contact .contact-sec .contact-icon {
+  margin: 10px 5px 30px;
+}
+
+#contact .contact-sec .contact-icon a {
+  margin: 20px 10px 10px;
+}
+
+#contact .contact-sec .contact-icon a img {
+  width: 10%;
+}
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .contact-sec .contact-icon a img {
+    width: 5%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .contact-sec .contact-icon a img {
+    width: 5%;
+  }
+}
+
+#contact .contact-sec .contact-form {
+  padding: 2% 8% 0%;
+}
+
+#contact .contact-sec .contact-input {
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #583C62;
+  border-radius: 4px;
+  margin: 10px 0px;
+  resize: none;
+}
+
+#contact .contact-sec .contact-input::-webkit-input-placeholder {
+  color: #A48BB6;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .contact-sec .contact-input:-ms-input-placeholder {
+  color: #A48BB6;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .contact-sec .contact-input::-ms-input-placeholder {
+  color: #A48BB6;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .contact-sec .contact-input::placeholder {
+  color: #A48BB6;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .contact-sec .contact-btn {
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #FEFEFC;
+  font-weight: 700;
+  padding: 15px 20px;
+  -webkit-box-shadow: #A48BB6 0px 0 3px;
+  box-shadow: #A48BB6 0 0 3px;
+  background-color: #C6536E;
+  font-size: 1rem;
+  width: 40%;
+  float: right;
+}
+
+#contact .contact-sec .contact-btn:hover,
+#contact .contact-sec .contact-btn:focus {
+  background-color: #2C2841;
+  color: #FEFEFC;
+  border: 2px solid #A48BB6;
+}
+
+#contact .contact-sec .error {
+  /* Default class with JQuery Form Validator plugin */
+  color: #2C2841;
+  font-size: .8rem;
+  font-weight: 700;
+  margin: 0;
+  padding-left: 2px;
 }
 /*# sourceMappingURL=main.css.map */

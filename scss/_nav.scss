@@ -84,12 +84,6 @@ nav {
             @include desktop {
                 top: 45px;
                 right: 60px;
-    
-                & span,
-                & > span::after,
-                & > span::before {
-                    background-color: $pink;
-                }
             }
         }
     

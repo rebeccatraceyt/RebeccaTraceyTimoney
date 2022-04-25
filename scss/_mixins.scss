@@ -3,21 +3,19 @@
 \* ----------------------- */
 
 @mixin borderShadow {
-    -webkit-box-shadow: $light-purple 0px 0 5px;
-    -moz-box-shadow: $light-purple 0 0 5px;
-    box-shadow: $light-purple 0 0 5px;
+    -webkit-box-shadow: $light-purple 0px 0 3px;
+    -moz-box-shadow: $light-purple 0 0 3px;
+    box-shadow: $light-purple 0 0 3px;
 }
 
 @mixin btnStyle {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: $light-purple;
-    font-size: .9rem;
     font-family: $title-font;
     color: $white;
     font-weight: 700;
     padding: 15px 20px;
-    
-    border: 1px solid $dark-purple;
     @include borderShadow();
 }
 

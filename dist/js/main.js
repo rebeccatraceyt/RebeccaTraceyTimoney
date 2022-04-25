@@ -51,16 +51,15 @@ $(function(){
         },
         messages: {
             from_name: {
-                required: "This field is required"
+                required: "Your name is required"
             },
             from_email: {
-                required: "This field is required"
+                required: "Your email is required"
             },
             message: {
-                required: "This field is required"
+                required: "A message is required"
             }
         },
-
     });
 
     // EmailJs Function
