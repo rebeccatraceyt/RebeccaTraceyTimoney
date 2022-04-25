@@ -389,8 +389,9 @@
         }
     
         @include desktop {
-            margin: 40px;
+            padding: 2%;
         }
+
         .contact-title{
             font-family: $title-font;
             font-weight: 600;
@@ -429,6 +430,10 @@
 
         .contact-form {
             padding: 2% 8% 0%;
+
+            @include desktop {
+                padding: 4%;
+            }
         }
 
         .contact-input {
@@ -455,7 +460,11 @@
             background-color: $pink;
             font-size: 1rem;
             width: 40%;
-            float: right; 
+            float: right;
+
+            @include desktop {
+                width: 30%;
+            }
         }
         .contact-btn:hover,
         .contact-btn:focus {
@@ -470,7 +479,14 @@
             font-weight: 700;
             margin: 0;
             padding-left: 2px;
-        }
+        }  
 
+    }
+    #map {
+        text-align: center;
+
+        & img {
+            width: 80%;
+        }
     }
 }

@@ -937,7 +937,7 @@ footer #footer-scroll .footer-content > a > i:hover {
 
 @media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #contact .contact-sec {
-    margin: 40px;
+    padding: 2%;
   }
 }
 
@@ -980,6 +980,12 @@ footer #footer-scroll .footer-content > a > i:hover {
 
 #contact .contact-sec .contact-form {
   padding: 2% 8% 0%;
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .contact-sec .contact-form {
+    padding: 4%;
+  }
 }
 
 #contact .contact-sec .contact-input {
@@ -1027,6 +1033,12 @@ footer #footer-scroll .footer-content > a > i:hover {
   float: right;
 }
 
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact .contact-sec .contact-btn {
+    width: 30%;
+  }
+}
+
 #contact .contact-sec .contact-btn:hover,
 #contact .contact-sec .contact-btn:focus {
   background-color: #2C2841;
@@ -1041,5 +1053,13 @@ footer #footer-scroll .footer-content > a > i:hover {
   font-weight: 700;
   margin: 0;
   padding-left: 2px;
+}
+
+#contact #map {
+  text-align: center;
+}
+
+#contact #map img {
+  width: 80%;
 }
 /*# sourceMappingURL=main.css.map */
