@@ -859,6 +859,12 @@ footer #footer-scroll .footer-content > a > i:hover {
   margin: 1% 2%;
 }
 
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills #skills-sec {
+    margin: 5%;
+  }
+}
+
 #skills #skills-sec .skills-title {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -874,6 +880,12 @@ footer #footer-scroll .footer-content > a > i:hover {
 #skills #skills-sec .skills-icon img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #skills #skills-sec .skills-icon {
+    margin: 10px 20px;
+  }
 }
 
 #contact {
