@@ -13,13 +13,10 @@ Hi, I'm Rebecca, a Software Developer and Tutor based in Dublin, Ireland. <br>
 
 ## Table of contents
 1. [UX](#UX)
-2. [Features](#Features)
-3. [Known Issues and Bugs](#Known-Issues-and-Bugs)
-4. [Technologies Used](#Technologies-Used)
-5. [Testing](#Testing)
-6. [Deployment](#Deployment)
-7. [Credits](#Credits)
-8. [Acknowledgements](#Acknowledgements)
+2. [Technologies Used](#Technologies-Used)
+3. [Deployment](#Deployment)
+4. [Credits](#Credits)
+5. [Technical Support](#Technical-Support)
 
 ***
 
@@ -132,30 +129,6 @@ The chosen colour scheme is reflective of the developers style of creativity. Th
 **Imagery**
 - The imagery used was created by the developer using the application [Procreate](https://procreate.art/ "Link to Procreate") in order to create a consistency of the elements while maintaining the look and feel of the application.
 
-[Back to top ⇧](#table-of-contents)
-
-## Features
-
-### Design Features
-
-<dl>
-  <dt></dt>
-  <dd>
-     <ul>
-          <li><strong></strong> - </li>
-          <li><strong></strong> - </li>
-     </ul>
-  </dd>
- 
-### Existing Features
-
-
-### Features to Implement in the future
-
-[Back to top ⇧](#table-of-contents)
-
-## Known Issues and Bugs 
-
 
 [Back to top ⇧](#table-of-contents)
 
@@ -194,9 +167,6 @@ The chosen colour scheme is reflective of the developers style of creativity. Th
 
 [Back to top ⇧](#table-of-contents)
 
-## Testing
-
-Testing information can be found in a separate testing [file](TESTING.md "Link to testing file")
 
 ## Deployment
 
@@ -265,17 +235,19 @@ Once a local clone is created, follow the below steps to deploy locally:
 [Back to top ⇧](#table-of-contents)
 
 ## Credits 
-
-### Content
-
-### Media
-
-### Code 
 The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
 - [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
 - [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
 - [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
 - [JSfiddle](https://jsfiddle.net/ "Link to JSfiddle page")
+
+[Back to top ⇧](#table-of-contents)
+
+***
+
+## Technical Support
+
+If you encounter any issues with this website, or require any further clarification or support, please email the [developer](mailto:rebecca.traceytimoney@gmail.com?subject=[Portfolio%Support]). Thank you!
 
 [Back to top ⇧](#table-of-contents)
 
