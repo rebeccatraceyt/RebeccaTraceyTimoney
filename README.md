@@ -111,3 +111,36 @@ The imagery used was created by the developer using [Procreate](https://procreat
 
 
 [Back to top ⇧](#table-of-contents)
+
+## Technologies Used
+### Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript "Link to JavaScript Wiki")
+### Tools Used
+- [Git](https://git-scm.com/ "Link to Git homepage")
+     - Git was used for version control to commit to Git and push to Heroku.
+- [GitHub](https://github.com/ "Link to GitHub")
+     - GitHub was used to store the project repository, after pushing.
+- [Figma](https://www.figma.com/ "Link to Figma homepage")
+     - Figma was used to create the wireframes during the design phase of the project and consistent components during development
+- [Mockup Generator](https://techsini.com/multi-mockup/index.php "Link Mockup Geneerator Homepage")
+     - Am I Responsive was used in order to validate the responsiveness of the design throughout the process, and to generate mockup imagery to be used.
+- [Procreate](https://procreate.art/ "Link to ProCreate homepage")
+     - Procreate was used to create and edit images as well as using the colour picker tool to ensure consistency throughout.
+- [Font Awesome](https://fontawesome.com/ "Link to Font Awesome site")
+     - Font Awesome was used in conjunction with Iconify for icons used throughout the website.
+
+### Libraries
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/ "Link to Bootstrap page")
+     - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
+- [jQuery](https://jquery.com/ "Link to jQuery page")
+     - jQuery was used to simplify the JavaScript code used.
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+    - Google fonts was used to import the fonts **"Indie Flower"** and **"Work Sans"** into the style.css file. These fonts were used throughout the project.
+- [jQuery Validation](https://jqueryvalidation.org/ "Link to jQuery Validation page")
+     - jQuery Validation was used to simplify form validation for the **Contact Form**.
+- [SweetAlert2](https://sweetalert2.github.io/ "Link to Sweet Alert 2 page")
+     - SweetAlert2 was used to customise the **Contact Form** success message for UX 
+
+[Back to top ⇧](#table-of-contents)
