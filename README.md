@@ -211,3 +211,23 @@ Once a local clone is created, follow the below steps to deploy locally:
 
 
 [Back to top ⇧](#table-of-contents)
+
+## Credits 
+The developer consulted multiple sites in order to better understand the code they were trying to implement. For code that was copied and edited, the developer made sure to reference this with the code. The following sites were used on a more regular basis:
+- [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
+- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
+- [Bootstrap](https://getbootstrap.com/ "Link to BootStrap page")
+- [JSfiddle](https://jsfiddle.net/ "Link to JSfiddle page")
+
+[Back to top ⇧](#table-of-contents)
+
+***
+
+## Technical Support
+
+If you encounter any issues with this website, or require any further clarification or support, please email the [developer](mailto:rebecca.traceytimoney@gmail.com?subject=[Portfolio%Support]). Thank you!
+
+[Back to top ⇧](#table-of-contents)
+
+***
+
