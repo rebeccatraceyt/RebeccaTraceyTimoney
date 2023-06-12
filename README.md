@@ -7,6 +7,13 @@
 This repository showcases my skills, expertise, and experiences as a UX Designer and Developer. As a UX Engineer, I bridge the gap between design and development, creating seamless and interactive user experiences through the integration of front-end development and UX design principles.
 
 
+## Table of contents
+1. [UX](#UX)
+2. [Technologies Used](#Technologies-Used)
+3. [Deployment](#Deployment)
+4. [Credits](#Credits)
+5. [Technical Support](#Technical-Support)
+
 ***
 
 ## UX 
