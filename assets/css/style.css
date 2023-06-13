@@ -1,0 +1,89 @@
+/* ----------------------- *\ 
+        Font Imports 
+\* ----------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* ----------------------- *\ 
+        Root Variables
+\* ----------------------- */
+
+:root {
+    /* Font Variables */
+    --body-font: 'Inter', sans-serif;
+
+    /* Colour Palette Variables */
+    --dark-blue: #4A7B82;
+    --blue: #568F96;
+    --light-blue: #B9D3D6;
+
+    /* Misc Colour Variables */
+    --white: #fafafa;
+    --body: #252525;
+}
+
+/* ----------------------- *\ 
+       Special Styling
+\* ----------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 1em 2em;
+}
+section {
+    width: 100vw;
+    min-height: 100vh;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--body);
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+
+
+/* ----------------------- *\ 
+        Navbar Section
+\* ----------------------- */
+
+
+/* ----------------------- *\ 
+        Navbar Button
+\* ----------------------- */
+
+
+/* ----------------------- *\ 
+            Navbar
+\* ----------------------- */
+
+
+/* ----------------------- *\ 
+        Media Query
+\* ----------------------- */
+
+/* Breakpoint on Tablet device */
+@media (min-width: 700px) and (max-width: 991px) {
+    /* --- Nav --- */
+}
+
+/* Breakpoint on Larger Tablet device */
+@media (min-width: 992px) and (max-width: 1024px) {
+    /* --- Nav  --- */
+    
+}
+
+/* Breakpoint on a Laptop Screen */
+@media (min-width: 1025px) {
+    /* --- Nav  --- */
+
+}
