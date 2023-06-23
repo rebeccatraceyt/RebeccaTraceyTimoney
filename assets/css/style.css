@@ -74,6 +74,35 @@ li {
     color: var(--colour2);
 }
 
+
+/* ----------------------- *\ 
+           Footer
+\* ----------------------- */
+
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+
+#footer-hr {
+    width: 268px;
+    height: 1px;
+    background-color: var(--light-blue);
+}
+
+#footer-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px
+}
+#footer-icons > img {
+    width: 40px;
+    height: 40px;
+}
+
 /* ----------------------- *\ 
         Media Query
 \* ----------------------- */
