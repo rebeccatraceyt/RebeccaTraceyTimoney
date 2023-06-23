@@ -61,17 +61,11 @@ li {
     color: var(--blue) !important;
 }
 
-/* Styling for nav links in navigation bar */
-
 .navbar-nav{
     padding: 16px;
 }
 .nav-link {
     font-size: 1.25em;
-}
-
-.navbar-nav .active{
-    color: var(--colour2);
 }
 
 
@@ -115,23 +109,28 @@ li {
         position: relative;
     }
 
-    .nav-link::after {
-        content: '';
+    .nav-link::before {
+        content: "";
         position: absolute;
         width: 100%;
-        transform: scaleX(0);
         height: 2px;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
+        border-radius: 20px;
         background-color: var(--blue);
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+
     }
 
-    .nav-link:hover::after {
-        color: var(--blue);
+    .nav-link.active:before,
+    .nav-link:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
         transform: scaleX(1);
-        transform-origin: bottom left;
     }
 }
 
