@@ -2,7 +2,7 @@
         Font Imports 
 \* ----------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Montserrat&display=swap');
 
 /* ----------------------- *\ 
         Root Variables
@@ -10,7 +10,8 @@
 
 :root {
     /* Font Variables */
-    --body-font: 'Inter', sans-serif;
+    --body-font: 'Montserrat', sans-serif;
+    --alt-font: 'Anek Bangla', sans-serif;
 
     /* Colour Palette Variables */
     --dark-blue: #4A7B82;
@@ -32,15 +33,15 @@
     box-sizing: border-box;
 }
 body {
+    height: 100vh;
     padding: 1em 2em;
+    line-height: 1.6;
+    font-family: var(--body-font);
+    color: var(--body);
 }
 section {
     width: 100vw;
     min-height: 100vh;
-}
-body {
-    font-family: var(--body-font);
-    color: var(--body);
 }
 a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -53,31 +54,60 @@ li {
 
 
 /* ----------------------- *\ 
-        Navbar Section
-\* ----------------------- */
-
-
-/* ----------------------- *\ 
-        Navbar Button
-\* ----------------------- */
-
-
-/* ----------------------- *\ 
             Navbar
 \* ----------------------- */
 
+.nav-link:hover, .nav-link.active {
+    color: var(--blue) !important;
+}
+
+/* Styling for nav links in navigation bar */
+
+.navbar-nav{
+    padding: 16px;
+}
+.nav-link {
+    font-size: 1.25em;
+}
+
+.navbar-nav .active{
+    color: var(--colour2);
+}
 
 /* ----------------------- *\ 
         Media Query
 \* ----------------------- */
 
 /* Breakpoint on Tablet device */
-@media (min-width: 700px) and (max-width: 991px) {
+@media (min-width: 700px) {
     /* --- Nav --- */
+    .nav-link {
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--blue);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .nav-link:hover::after {
+        color: var(--blue);
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 }
 
 /* Breakpoint on Larger Tablet device */
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (min-width: 992px) {
     /* --- Nav  --- */
     
 }
