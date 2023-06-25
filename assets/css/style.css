@@ -92,6 +92,14 @@ h1, h2 {
 #hero-container {
     max-width: 100%;
     gap: 16px;
+    padding-bottom: 1.5rem;
+}
+.hero-text {
+    padding: 1rem;
+}
+#hero-link {
+    display: flex;
+    justify-content: center;
 }
 
 /* ----------------------- *\ 
@@ -126,6 +134,10 @@ h1, h2 {
 
 /* Breakpoint on Tablet device */
 @media (min-width: 700px) {
+
+    section {
+        min-height: 75vh;
+    }
     /* --- Nav --- */
     .navbar-nav{
         padding: 0px;
@@ -160,6 +172,14 @@ h1, h2 {
     /* --- Homepage --- */
     #hero-container {
         gap: 0;
+        align-items: center;
+        max-width: 80%;
+    }
+    .hero-img, .hero-text {
+        padding: 1.5rem;
+    }
+    #hero-link {
+        justify-content: flex-start;
     }
 }
 
