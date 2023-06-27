@@ -93,9 +93,7 @@ The information architecture was organized in a **hierarchial tree structure** i
 #### Skeleton 
 High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=104%3A194 "Link to Portfolio Workspace") with providing a positive user experience in mind:
 
-<div align="center">
-<img src="markdown-files/wireframe.png" alt="Wireframe mockup for RebeccaTraceyTimoney">
-</div>
+
 
 #### Surface
 
@@ -103,13 +101,24 @@ High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.fi
 
 The combination of blue and green shades creates a harmonious and calming colour palette. Aligning with the Developer's brand identity, the following palette was thoughtfully crafted to create a visually appealing, user-friendly, and accessible interface:
 
-![Colour Palette](markdown-files/color_palette.png)
+<div align="center">
+     <img src="markdown-files/color_palette.png" alt="Color palette for RebeccaTraceyTimoney">
+</div>
+
 
 **Typography**
 
-The font [Inter](https://fonts.google.com/specimen/Inter "Link to Inter Google Fonts page") was carefully chosen for this project due to its versatility, readability, and modern aesthetic. Its clean and minimalistic design brings a contemporary feel to the interface, while its subtle character adds personality and uniqueness to the overall design.
+The font [Montserrat](https://fonts.google.com/specimen/Montserrat "Link to Montserrat Google Fonts page") was carefully chosen for this project due to its versatility, readability, and modern aesthetic. Its clean and minimalistic design brings a contemporary feel to the interface, while its subtle character adds personality and uniqueness to the overall design.
 
-![Inter Typography Example](markdown-files/inter.png)
+<div align="center">
+     <img src="markdown-files/montserrat.png" alt="Montserrat typography example for RebeccaTraceyTimoney">
+</div>
+
+The font [Anek Latin](https://fonts.google.com/specimen/Anek+Latin "Link to Anek Latin Google Fonts page") was chosen due to the unique attributes that align with the primary Montserrat font. The contemporary and sleek design adds a touch of modernity to the visual identity of the site. The exceptional legibility of the font ensures that content is easily readable across various platforms, maintaining clarity and impact.
+
+<div align="center">
+     <img src="markdown-files/anek_latin.png" alt="Anek Latin typography example for RebeccaTraceyTimoney">
+</div>
 
 
 **Imagery**
@@ -131,7 +140,7 @@ The imagery used was created by the developer using [Procreate](https://procreat
      - GitHub was used to store the project repository, after pushing.
 - [Figma](https://www.figma.com/ "Link to Figma homepage")
      - Figma was used to create the wireframes during the design phase of the project and consistent components during development
-- [Mockup Generator](https://techsini.com/multi-mockup/index.php "Link Mockup Geneerator Homepage")
+- [Mockup Generator](https://techsini.com/multi-mockup/index.php "Link Mockup Generator Homepage")
      - Am I Responsive was used in order to validate the responsiveness of the design throughout the process, and to generate mockup imagery to be used.
 - [Procreate](https://procreate.art/ "Link to ProCreate homepage")
      - Procreate was used to create and edit images as well as using the colour picker tool to ensure consistency throughout.
