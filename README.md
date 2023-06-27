@@ -91,9 +91,37 @@ The information architecture was organized in a **hierarchial tree structure** i
 </p>
 
 #### Skeleton 
-High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/CImNeXCAVsJVcCnhKufeO9/Portfolio?node-id=104%3A194 "Link to Portfolio Workspace") with providing a positive user experience in mind:
+High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.figma.com/file/TXmMNOX8PhV3Yehvk5xYnV/Portfolio?type=design&node-id=0-1&mode=design&t=Rcndgj1kwzzb3imU-0 "Link to Portfolio Workspace") with providing a positive user experience in mind:
 
+<details>
+<summary>Home Page</summary>
+<br>
+<img src="markdown-files/home_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+</details>
 
+<details>
+<summary>About Page</summary>
+<br>
+<img src="markdown-files/about_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+</details>
+
+<details>
+<summary>Contact Page</summary>
+<br>
+<img src="markdown-files/contact_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+</details>
+
+<details>
+<summary>Thank you Page</summary>
+<br>
+<img src="markdown-files/thankyou_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+</details>
+
+<details>
+<summary>Privacy Policy Page</summary>
+<br>
+<img src="markdown-files/privacypolicy.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+</details>
 
 #### Surface
 
