@@ -102,25 +102,25 @@ High-Fidelity Wireframe mockups were created in [Figma Workspace](https://www.fi
 <details>
 <summary>About Page</summary>
 <br>
-<img src="markdown-files/about_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+<img src="markdown-files/about_page.png" alt="About page wireframe for RebeccaTraceyTimoney">
 </details>
 
 <details>
 <summary>Contact Page</summary>
 <br>
-<img src="markdown-files/contact_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+<img src="markdown-files/contact_page.png" alt="Contact page wireframe for RebeccaTraceyTimoney">
 </details>
 
 <details>
 <summary>Thank you Page</summary>
 <br>
-<img src="markdown-files/thankyou_page.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+<img src="markdown-files/thankyou_page.png" alt="Thank you page wireframe for RebeccaTraceyTimoney">
 </details>
 
 <details>
 <summary>Privacy Policy Page</summary>
 <br>
-<img src="markdown-files/privacypolicy.png" alt="Homepage wireframe for RebeccaTraceyTimoney">
+<img src="markdown-files/privacypolicy.png" alt="Privacy Policy page wireframe for RebeccaTraceyTimoney">
 </details>
 
 #### Surface
