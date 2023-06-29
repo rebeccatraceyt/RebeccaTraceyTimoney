@@ -72,16 +72,17 @@ h1, h2, h3 {
     font-size: 20px;
     font-family: var(--alt-font);
 }
-.primary-btn {
+.link-btn:hover, .link-btn:active {
+    box-shadow: var(--shadow-sm);
+}
+.primary-btn, .primary-btn:hover, .primary-btn:active {
     color: var(--white);
     background-color: var(--dark-blue);
 }
-.secondary-btn {
+.secondary-btn, .secondary-btn:hover, .secondary-btn:active {
     color: var(--dark-blue);
     background-color: var(--white);
-    border: 2px solid var(--dark-blue);
 }
-
 
 /* ----------------------- *\ 
             Navbar
