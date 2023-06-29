@@ -83,6 +83,13 @@ h1, h2, h3 {
     color: var(--dark-blue);
     background-color: var(--white);
 }
+.inline-link {
+    color: var(--blue);
+}
+.inline-link:hover, .inline-link:focus, .inline-link:active {
+    color: var(--blue);
+    text-decoration: underline;
+}
 
 /* ----------------------- *\ 
             Navbar
