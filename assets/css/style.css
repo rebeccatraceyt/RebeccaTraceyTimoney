@@ -150,9 +150,20 @@ h1, h2, h3 {
 }
 
 /* ----------------------- *\ 
-      About Page: Hero
+         About Page
 \* ----------------------- */
-
+.about-container > .row {
+    margin-bottom: 2rem;
+}
+.quote-container {
+    gap: 16px;
+}
+.quote-inner-container {
+    align-items: center;
+}
+#quote-author {
+    color: var(--dark-blue);
+}
 
 /* ----------------------- *\ 
            Footer
@@ -252,6 +263,12 @@ h1, h2, h3 {
     /* --- About Page --- */
     .about-container {
         padding: 4rem;
+    }
+    .quote-inner-container {
+        align-items: end;
+    }
+    .quote-icon {
+        height: 100%;
     }
 }
 
