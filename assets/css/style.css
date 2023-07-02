@@ -150,6 +150,11 @@ h1, h2, h3 {
 }
 
 /* ----------------------- *\ 
+      About Page: Hero
+\* ----------------------- */
+
+
+/* ----------------------- *\ 
            Footer
 \* ----------------------- */
 
@@ -242,6 +247,11 @@ h1, h2, h3 {
         justify-content: flex-start;
         max-width: fit-content;
         padding: 6px;
+    }
+
+    /* --- About Page --- */
+    .about-container {
+        padding: 4rem;
     }
 }
 
