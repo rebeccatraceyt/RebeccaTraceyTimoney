@@ -263,6 +263,7 @@ h1, h2, h3 {
     #hero-link {
         justify-content: flex-start;
         margin: 0;
+        width: 200px;
     }
     .project-container {
         max-width: 90%;
@@ -275,7 +276,6 @@ h1, h2, h3 {
     }
     .project-btns > div {
         justify-content: flex-start;
-        max-width: fit-content;
         padding: 6px;
     }
 
