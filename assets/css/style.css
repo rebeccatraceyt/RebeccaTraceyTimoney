@@ -153,14 +153,21 @@ h1, h2, h3 {
 /* ----------------------- *\ 
          About Page
 \* ----------------------- */
+.about-container {
+    padding-top: 2em;
+}
 .about-container > .row {
     margin-bottom: 2rem;
+}
+#quote-outer-container > h2 {
+    font-size: 1.7em;
 }
 .quote-container {
     gap: 16px;
 }
 .quote-inner-container {
     align-items: center;
+    text-align: center;
 }
 #quote-author {
     color: var(--dark-blue);
