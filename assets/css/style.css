@@ -300,5 +300,10 @@ h1, h2, h3 {
 /* Breakpoint on a Laptop Screen */
 @media (min-width: 1025px) {
     /* --- Nav  --- */
-
+    .link-btn {
+        width: 200px;
+    }
+    .project-btns > div {
+        max-width: -webkit-fit-content;
+    }
 }
