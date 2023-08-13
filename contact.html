@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Online Portfolio - Rebecca Tracey-Timoney" />
+    <meta name="title" content="Rebecca Tracey-Timoney" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Page title -->
+    <title>Rebecca Tracey-Timoney | Contact</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" height="40" class="d-inline-block align-top" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item px-3 py-5-sm">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="form-outer-container">
+        <div class="form-header">
+            <h1>Get in Contact</h1>
+            <p>
+                If you have a project in mind or simply want to say hi, I'd love to hear from you!
+            </p>
+        </div>
+        <div class="form-container">
+            <form action="submit_form.php" method="post">
+                <div class="form-elements">
+                    <label class="form-label" for="name">Name</label> <span class="sml-txt">(required):</span><br>
+                    <input type="text" id="name" name="name" placeholder="e.g. Rebecca" required>
+                </div>
+
+                <div class="form-elements">
+                    <label class="form-label" for="email">Email</label> <span class="sml-txt">(required):</span><br>
+                    <input type="email" id="email" name="email" placeholder="e.g. rebecca@gmail.com" required>
+                </div>
+
+                <div class="form-elements">
+                    <label class="form-label mb-2">Select Query Type:</label><br>
+                    <input type="radio" id="general" name="inquiryType" value="General Inquiry" checked>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="collab" name="inquiryType" value="Project Collaboration">
+                    <label for="collab">Project Collaboration Request</label><br>
+                    <input type="radio" id="feedback" name="inquiryType" value="Portfolio Feedback">
+                    <label for="feedback">Portfolio Feedback or Question</label>
+                </div>
+
+                <div class="form-elements">
+                    <label class="form-label" for="message">Message</label> <span class="sml-txt">(required):</span><br>
+                    <textarea id="message" name="message" rows="6" cols="50" placeholder="Say hi..." required></textarea>
+                </div>
+
+                <div class="form-elements form-privacy">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <label for="privacyPolicy">I have read and agree to the <a href="" rel="noopener noreferrer"
+                        aria-label="Link to site Privacy Policy" class="inline-link">Privacy Policy</a> for Rebecca Tracey-Timoney's online portfolio</label>
+                </div>
+
+                <div class="form-elements">
+                    <input class="sub-btn primary-btn" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4" id="footer-container">
+        <a href="mailto:rebecca.traceytimoney@gmail.com?subject=Portfolio Enquiry">
+            <span class="text-dark">rebecca.traceytimoney</span>@<span class="text-dark">gmail.com</span>
+        </a>
+        <hr id="footer-hr">
+        <div id="footer-icons">
+            <a href="https://codepen.io/rebeccatraceyt" target="_blank" rel="noopener noreferrer"
+                aria-label="Link to my CodePen profile">
+                <img src="assets/images/codepen.svg" alt="CodePen icon">
+            </a>
+            <a href="https://github.com/rebeccatraceyt" target="_blank" rel="noopener noreferrer"
+                aria-label="Link to my GitHub profile">
+                <img src="assets/images/github.svg" alt="GitHub icon">
+            </a>
+            <a href="https://www.linkedin.com/in/rebeccatraceytimoney/" target="_blank" rel="noopener noreferrer"
+                aria-label="Link to my LinkedIn profile">
+                <img src="assets/images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
