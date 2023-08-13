@@ -373,6 +373,12 @@ input[type="checkbox"]:checked {
     .quote-icon {
         height: 100%;
     }
+
+    /* --- Contact Page --- */
+    .form-outer-container {
+        margin: 2.5em auto;
+        max-width: 60%;
+    }
 }
 
 /* Breakpoint on Larger Tablet device */
