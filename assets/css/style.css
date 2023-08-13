@@ -2,7 +2,7 @@
         Font Imports 
 \* ----------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Montserrat:wght@400;600;700;900&display=swap');
 
 /* ----------------------- *\ 
         Root Variables
@@ -155,6 +155,7 @@ h1, h2, h3 {
 \* ----------------------- */
 .about-container {
     padding-top: 2em;
+    margin-bottom: 3em;
 }
 .about-container > .row {
     margin-bottom: 2rem;
@@ -172,7 +173,24 @@ h1, h2, h3 {
 #quote-author {
     color: var(--dark-blue);
 }
-
+.facts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.facts-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: justify;
+}
+.facts-item > p {
+    margin-bottom: 0;
+}
+.fact-name {
+    font-weight: 600;
+}
 /* ----------------------- *\ 
            Footer
 \* ----------------------- */
@@ -280,7 +298,7 @@ h1, h2, h3 {
     }
 
     /* --- About Page --- */
-    .about-container {
+    .about-container, .facts-outer-container {
         padding: 4rem;
     }
     .quote-inner-container {
