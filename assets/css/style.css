@@ -319,6 +319,9 @@ input[type="checkbox"]:checked {
     body {
         padding: 1em 2em;
     }
+    .sub-btn {
+       width: 30%;
+    }
     
     /* --- Nav --- */
     .navbar-nav{
