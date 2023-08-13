@@ -38,7 +38,7 @@
 }
 body {
     height: 100vh;
-    padding: 1em 2em;
+    padding: 1em 1.2em;
     line-height: 1.6;
     font-family: var(--body-font);
     color: var(--body);
@@ -61,7 +61,7 @@ h1, h2, h3 {
 }
 .link-btn {
     display: flex;
-    width: 200px;
+    width: 100%;
     height: 52px;
     padding: 20px 24px;
     justify-content: center;
@@ -96,7 +96,7 @@ h1, h2, h3 {
 \* ----------------------- */
 
 .nav-link:hover, .nav-link.active {
-    color: var(--blue) !important;
+    color: var(--dark-blue) !important;
 }
 .navbar-nav{
     padding: 16px;
@@ -122,6 +122,7 @@ h1, h2, h3 {
 #hero-link {
     display: flex;
     justify-content: center;
+    margin: 3em 0em 0em;
 }
 
 /* ----------------------- *\ 
@@ -138,7 +139,7 @@ h1, h2, h3 {
     background: var(--opaque-blue);
     box-shadow: var(--shadow-sm);
 
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .project-container > div {
     padding: 0;
@@ -174,7 +175,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     color: var(--dark-blue);
-    font-size: 20px;
+    font-size: 1em;
 }
 #footer-hr {
     width: 268px;
@@ -198,6 +199,11 @@ h1, h2, h3 {
 /* Breakpoint on Tablet device */
 @media (min-width: 700px) {
 
+    /* --- Special Styling --- */
+    body {
+        padding: 1em 2em;
+    }
+    
     /* --- Nav --- */
     .navbar-nav{
         padding: 0px;
@@ -232,6 +238,11 @@ h1, h2, h3 {
         transform: scaleX(1);
     }
 
+    /* --- Footer --- */
+    #footer-container {
+        font-size: 1.25em;
+    }
+
     /* --- Homepage --- */
     #hero-container {
         gap: 0;
@@ -244,6 +255,7 @@ h1, h2, h3 {
     }
     #hero-link {
         justify-content: flex-start;
+        margin: 0;
     }
     .project-container {
         max-width: 90%;
