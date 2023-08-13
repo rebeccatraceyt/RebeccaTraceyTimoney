@@ -258,6 +258,31 @@ input[type="checkbox"]:checked {
 }
 
 /* ----------------------- *\ 
+       Privacy Policy
+\* ----------------------- */
+.policy-outer-container {
+    margin: 2em auto;
+    text-align: justify;
+}
+.policy-container {
+    margin-top: 2em;
+}
+.policy-title {
+    font-size: 20px;
+}
+.policy-header {
+    color: var(--dark-blue);
+}
+.sub-policy {
+    display: flex;
+    gap: 12px;
+}
+.policy-name {
+    font-weight: 600;
+}
+
+
+/* ----------------------- *\ 
            Footer
 \* ----------------------- */
 
