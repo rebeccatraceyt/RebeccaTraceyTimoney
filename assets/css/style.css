@@ -324,4 +324,9 @@ h1, h2, h3 {
     .project-btns > div {
         max-width: -webkit-fit-content;
     }
+
+    /* --- About Page --- */
+    .about-container, .facts-outer-container {
+        max-width: 80%;
+    }
 }
