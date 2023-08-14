@@ -2,7 +2,7 @@
         Font Imports 
 \* ----------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Montserrat:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Bad+Script&family=Montserrat:wght@400;600;700;900&display=swap');
 
 /* ----------------------- *\ 
         Root Variables
@@ -12,6 +12,7 @@
     /* Font Variables */
     --body-font: 'Montserrat', sans-serif;
     --alt-font: 'Anek Bangla', sans-serif;
+    --writing-font: 'Bad Script', sans-serif;
 
     /* Colour Palette Variables */
     --dark-blue: #4A7B82;
@@ -258,6 +259,37 @@ input[type="checkbox"]:checked {
 }
 
 /* ----------------------- *\ 
+       Thank you page
+\* ----------------------- */
+#confo-container {
+    margin: 2em auto;
+}
+#confo-header {
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+}
+#confo-msg {
+    margin-top: 1em;
+    text-align: justify;
+}
+#confo-msg p {
+    margin: 1.3em 0;
+}
+.config-link > span {
+    font-weight: 600;
+}
+.config-link > a {
+    color: var(--dark-blue);
+}
+#confo-sig {
+    color: var(--dark-blue);
+    font-family: var(--writing-font);
+    font-size: 2em;
+}
+
+
+/* ----------------------- *\ 
        Privacy Policy
 \* ----------------------- */
 .policy-outer-container {
@@ -280,7 +312,6 @@ input[type="checkbox"]:checked {
 .policy-name {
     font-weight: 600;
 }
-
 
 /* ----------------------- *\ 
            Footer
