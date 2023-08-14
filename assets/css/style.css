@@ -46,6 +46,8 @@ body {
 }
 section {
     max-width: 100vw;
+}
+.sec-height {
     min-height: 90vh;
 }
 a, a:hover, a:focus, a:active {
@@ -464,5 +466,9 @@ input[type="checkbox"]:checked {
     /* --- About Page --- */
     .about-container, .facts-outer-container {
         max-width: 80%;
+    }
+
+    #confo-container {
+        max-width: 60%;
     }
 }
