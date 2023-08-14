@@ -27,6 +27,15 @@
 
 <body>
 
+    <script type="text/javascript"> 
+        // default value for submitted variable
+        // checks if form has been submitted
+        var submitted=false; 
+    </script>
+
+    <!-- hidden iframe element to redirect user to the thank you page -->
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='thank-you.html';};"></iframe>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="index.html">
@@ -60,7 +69,7 @@
             </p>
         </div>
         <div class="form-container">
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdv9kjdoQSmCQRPrxF4P6mpCQUIPO5A3KKCjYQTRkbHv-W7Dg/formResponse" method="post">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdv9kjdoQSmCQRPrxF4P6mpCQUIPO5A3KKCjYQTRkbHv-W7Dg/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true;">
                 <div class="form-elements">
                     <label class="form-label" for="name">Name</label> <span class="sml-txt">(required):</span><br>
                     <input type="text" id="name" name="entry.1640948945" placeholder="e.g. Rebecca" required>
