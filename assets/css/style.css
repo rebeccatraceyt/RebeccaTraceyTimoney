@@ -129,10 +129,15 @@ h1, h2, h3 {
 .hero-text {
     padding: 1rem;
 }
-#hero-link {
+#hero-links {
     display: flex;
     justify-content: center;
     margin: 3em 0em 0em;
+    flex-direction: column;
+    gap: 12px;
+}
+#hero-links > .secondary-btn {
+    border: 1px solid var(--dark-blue);
 }
 
 /* ----------------------- *\ 
@@ -405,11 +410,11 @@ input[type="checkbox"]:checked {
     .hero-img, .hero-text {
         padding: 1.5rem;
     }
-    #hero-link {
+    #hero-links {
         justify-content: flex-start;
-        margin: 0;
-        width: 200px;
+        flex-direction: row;
     }
+
     .project-container {
         max-width: 90%;
         gap: 0;
