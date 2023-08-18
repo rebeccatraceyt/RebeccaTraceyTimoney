@@ -1,5 +1,5 @@
 <p align="center">
-<img src="markdown-files/portfolio-img.png" alt="Hello World, I'm Rebecca!">
+<img src="markdown-files/social-img.png" alt="Hello World, I'm Rebecca!">
 </p>
 
 
